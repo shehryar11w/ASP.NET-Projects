@@ -1,0 +1,167 @@
+﻿@model PagedList.IPagedList<ContosoUniversity1.Models.Student>
+@using PagedList.Mvc;
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+
+@{
+    ViewBag.Title = "Students";
+}
+
+<h2>Students</h2>
+
+@*<p>
+    <button type="button" id="open-popup" class="btn btn-success">Create New</button>
+</p>*@
+
+<div class="col grid_12_of_12">
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog custom-modal-dialog" role="document">
+            <div class="modal-content"></div>
+        </div>
+    </div>
+    <button style="margin-top: 10px;" class="btn btn-success" id="openModalButton">
+        <i class="glyphicon glyphicon-plus"></i>Create 
+    </button>
+    <hr />
+</div>
+        
+@using (Html.BeginForm("Index", "Student", FormMethod.Get))
+{
+    <p>
+        <div class="input-group mb-3">
+            @Html.TextBox("SearchString", ViewBag.CurrentFilter as string, new { @class = "form-control", @placeholder = "Find by name" })
+            <div class="input-group-append">
+                <input type="submit" class="btn btn-outline-primary mb-0" value="Search" />
+            </div>
+        </div>
+    </p>
+}
+<div class="card">
+    <div class="table-responsive">
+        <table class="table align-items-center mb-0">
+            <thead>
+                <tr>
+                    <th>
+                        <a class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-9" href="@Url.Action("Index", new
+                                                                                                        { sortOrder = ViewBag.NameSortParm,
+                                                                                                          currentFilter = ViewBag.CurrentFilter
+                                                                                                        })"
+                           style="text-decoration: none;">Last Name</a>
+                    </th>
+                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-9">
+                        First Name
+                    </th>
+                    <th>
+                        <a class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-9" href="@Url.Action("Index", new
+                                                                                                        { sortOrder = ViewBag.DateSortParm,
+                                                                                                          currentFilter = ViewBag.CurrentFilter
+                                                                                                        })"
+                           style="text-decoration: none;">Enrollment Date</a>
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td class="mb-0 text-xs">
+                            <h6>@Html.DisplayFor(modelItem => item.LastName)</h6>
+                        </td>
+                        <td class="mb-0 text-xs">
+                            <h6>@Html.DisplayFor(modelItem => item.FirstMidName)</h6>
+                        </td>
+                        <td class="mb-0 text-xs">
+                            <h6>@Html.DisplayFor(modelItem => item.EnrollmentDate)</h6>
+                        </td>
+                        <td class="text-secondary font-weight-bold text-xs">
+                            <button type="button" class="btn btn-default" onclick="location.href='@Url.Action("Edit", "Student", new { id = item.ID })'">Edit</button>
+                                <button style="margin-top: 10px;" class="btn btn-danger" id="DeleteModalButton">
+                                    <i class="glyphicon glyphicon-plus"></i>Delete
+                                </button>
+                            <button type="button" class="btn btn-default" onclick="location.href='@Url.Action("Details", "Student", new { id = item.ID })'">Details</button>
+                            <button type="button" class="btn btn-danger" onclick="location.href='@Url.Action("PopupDelete", "Student", new { id = item.ID })'">Delete</button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<br />
+    Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+
+    @Html.PagedListPager(Model, page => Url.Action("Index",
+            new { page, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }))
+
+@section Scripts
+    {
+    <script>
+        $(document).ready(function () {
+
+            var openModalButton = document.getElementById("openModalButton");
+            var modal = document.getElementById("exampleModal");
+
+            openModalButton.addEventListener("click", function () {
+                var url = "/Student/PopupCreate";
+                $.get(url, function (data) {
+                    $(modal).find(".modal-content").html(data);
+                    $(modal).modal("show");
+                });
+
+            DeleteModalButton.addEventListener("click", function () {
+                var url = "/Student/PopupDelete";
+                $.get(url, function (data) {
+                    $(modal).find(".modal-content").html(data);
+                    $(modal).modal("show");
+                });
+            });
+
+
+
+
+
+
+
+
+
+
+
+            @*$('#open-popup').click(function () {
+                var url = '@Url.Action("Create", "Student")'; // replace with the URL of the webpage you want to open
+                var formDiv = $('<div/>');
+                $.get(url)
+                    .done(function (response) {
+                        formDiv.html(response);
+
+                        Popup = formDiv.dialog({
+                            autoOpen: true,
+                            resizable: false,
+                            title: 'Fill Employee Details',
+                            height: 500,
+                            width: 700,
+                            close: function () {
+                                Popup.dialog('destroy').remove();
+                            }
+
+                        });
+                    });
+
+            });
+
+            //    $('<div>').dialog({
+            //        modal: true,
+            //        width: width,
+            //        height: height,
+            //        title: title,
+            //        open: function (event, ui) {
+            //            $(this).load(url);
+            //        }
+            //    });
+            //});*@
+        });
+
+        
+    </script>
+    }

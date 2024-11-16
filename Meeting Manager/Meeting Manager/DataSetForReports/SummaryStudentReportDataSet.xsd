@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SummaryStudentReportDataSet" targetNamespace="http://tempuri.org/SummaryStudentReportDataSet.xsd" xmlns:mstns="http://tempuri.org/SummaryStudentReportDataSet.xsd" xmlns="http://tempuri.org/SummaryStudentReportDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SummaryStudentReportDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="SummaryStudentReportDataSet" msprop:Generator_UserDSName="SummaryStudentReportDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SummaryStudentReport" msprop:Generator_TableClassName="SummaryStudentReportDataTable" msprop:Generator_TableVarName="tableSummaryStudentReport" msprop:Generator_TablePropName="SummaryStudentReport" msprop:Generator_RowDeletingName="SummaryStudentReportRowDeleting" msprop:Generator_RowChangingName="SummaryStudentReportRowChanging" msprop:Generator_RowEvHandlerName="SummaryStudentReportRowChangeEventHandler" msprop:Generator_RowDeletedName="SummaryStudentReportRowDeleted" msprop:Generator_UserTableName="SummaryStudentReport" msprop:Generator_RowChangedName="SummaryStudentReportRowChanged" msprop:Generator_RowEvArgName="SummaryStudentReportRowChangeEvent" msprop:Generator_RowClassName="SummaryStudentReportRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Grade" msprop:Generator_ColumnVarNameInTable="columnGrade" msprop:Generator_ColumnPropNameInRow="Grade" msprop:Generator_ColumnPropNameInTable="GradeColumn" msprop:Generator_UserColumnName="Grade" type="xs:string" minOccurs="0" />
+              <xs:element name="Section" msprop:Generator_ColumnVarNameInTable="columnSection" msprop:Generator_ColumnPropNameInRow="Section" msprop:Generator_ColumnPropNameInTable="SectionColumn" msprop:Generator_UserColumnName="Section" type="xs:string" minOccurs="0" />
+              <xs:element name="Opening" msprop:Generator_ColumnVarNameInTable="columnOpening" msprop:Generator_ColumnPropNameInRow="Opening" msprop:Generator_ColumnPropNameInTable="OpeningColumn" msprop:Generator_UserColumnName="Opening" type="xs:int" minOccurs="0" />
+              <xs:element name="Join" msprop:Generator_ColumnVarNameInTable="columnJoin" msprop:Generator_ColumnPropNameInRow="Join" msprop:Generator_ColumnPropNameInTable="JoinColumn" msprop:Generator_UserColumnName="Join" type="xs:int" minOccurs="0" />
+              <xs:element name="Left" msprop:Generator_ColumnVarNameInTable="columnLeft" msprop:Generator_ColumnPropNameInRow="Left" msprop:Generator_ColumnPropNameInTable="LeftColumn" msprop:Generator_UserColumnName="Left" type="xs:int" minOccurs="0" />
+              <xs:element name="PreviousClass" msprop:Generator_ColumnVarNameInTable="columnPreviousClass" msprop:Generator_ColumnPropNameInRow="PreviousClass" msprop:Generator_ColumnPropNameInTable="PreviousClassColumn" msprop:Generator_UserColumnName="PreviousClass" type="xs:int" minOccurs="0" />
+              <xs:element name="Transfer" msprop:Generator_ColumnVarNameInTable="columnTransfer" msprop:Generator_ColumnPropNameInRow="Transfer" msprop:Generator_ColumnPropNameInTable="TransferColumn" msprop:Generator_UserColumnName="Transfer" type="xs:int" minOccurs="0" />
+              <xs:element name="Detained" msprop:Generator_ColumnVarNameInTable="columnDetained" msprop:Generator_ColumnPropNameInRow="Detained" msprop:Generator_ColumnPropNameInTable="DetainedColumn" msprop:Generator_UserColumnName="Detained" type="xs:int" minOccurs="0" />
+              <xs:element name="Remarks" msprop:Generator_ColumnVarNameInTable="columnRemarks" msprop:Generator_ColumnPropNameInRow="Remarks" msprop:Generator_ColumnPropNameInTable="RemarksColumn" msprop:Generator_UserColumnName="Remarks" type="xs:string" minOccurs="0" />
+              <xs:element name="Month" msprop:Generator_ColumnVarNameInTable="columnMonth" msprop:Generator_ColumnPropNameInRow="Month" msprop:Generator_ColumnPropNameInTable="MonthColumn" msprop:Generator_UserColumnName="Month" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IsAnnual" msprop:Generator_ColumnVarNameInTable="columnIsAnnual" msprop:Generator_ColumnPropNameInRow="IsAnnual" msprop:Generator_ColumnPropNameInTable="IsAnnualColumn" msprop:Generator_UserColumnName="IsAnnual" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

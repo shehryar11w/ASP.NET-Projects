@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReceivingVoucherDataSet" targetNamespace="http://tempuri.org/ReceivingVoucherDataSet.xsd" xmlns:mstns="http://tempuri.org/ReceivingVoucherDataSet.xsd" xmlns="http://tempuri.org/ReceivingVoucherDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ReceivingVoucherDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ReceivingVoucherDataSet" msprop:Generator_UserDSName="ReceivingVoucherDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ReceivingVoucher" msprop:Generator_TableClassName="ReceivingVoucherDataTable" msprop:Generator_TableVarName="tableReceivingVoucher" msprop:Generator_RowChangedName="ReceivingVoucherRowChanged" msprop:Generator_TablePropName="ReceivingVoucher" msprop:Generator_RowDeletingName="ReceivingVoucherRowDeleting" msprop:Generator_RowChangingName="ReceivingVoucherRowChanging" msprop:Generator_RowEvHandlerName="ReceivingVoucherRowChangeEventHandler" msprop:Generator_RowDeletedName="ReceivingVoucherRowDeleted" msprop:Generator_RowClassName="ReceivingVoucherRow" msprop:Generator_UserTableName="ReceivingVoucher" msprop:Generator_RowEvArgName="ReceivingVoucherRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="VoucherNo" msprop:Generator_ColumnVarNameInTable="columnVoucherNo" msprop:Generator_ColumnPropNameInRow="VoucherNo" msprop:Generator_ColumnPropNameInTable="VoucherNoColumn" msprop:Generator_UserColumnName="VoucherNo" type="xs:string" minOccurs="0" />
+              <xs:element name="Date" msprop:Generator_ColumnVarNameInTable="columnDate" msprop:Generator_ColumnPropNameInRow="Date" msprop:Generator_ColumnPropNameInTable="DateColumn" msprop:Generator_UserColumnName="Date" type="xs:string" minOccurs="0" />
+              <xs:element name="ChartOfAccountDetail" msprop:Generator_ColumnVarNameInTable="columnChartOfAccountDetail" msprop:Generator_ColumnPropNameInRow="ChartOfAccountDetail" msprop:Generator_ColumnPropNameInTable="ChartOfAccountDetailColumn" msprop:Generator_UserColumnName="ChartOfAccountDetail" type="xs:string" minOccurs="0" />
+              <xs:element name="Narration" msprop:Generator_ColumnVarNameInTable="columnNarration" msprop:Generator_ColumnPropNameInRow="Narration" msprop:Generator_ColumnPropNameInTable="NarrationColumn" msprop:Generator_UserColumnName="Narration" type="xs:string" minOccurs="0" />
+              <xs:element name="Debit" msprop:Generator_ColumnVarNameInTable="columnDebit" msprop:Generator_ColumnPropNameInRow="Debit" msprop:Generator_ColumnPropNameInTable="DebitColumn" msprop:Generator_UserColumnName="Debit" type="xs:string" minOccurs="0" />
+              <xs:element name="Credit" msprop:Generator_ColumnVarNameInTable="columnCredit" msprop:Generator_ColumnPropNameInRow="Credit" msprop:Generator_ColumnPropNameInTable="CreditColumn" msprop:Generator_UserColumnName="Credit" type="xs:string" minOccurs="0" />
+              <xs:element name="Campus" msprop:Generator_ColumnVarNameInTable="columnCampus" msprop:Generator_ColumnPropNameInRow="Campus" msprop:Generator_ColumnPropNameInTable="CampusColumn" msprop:Generator_UserColumnName="Campus" type="xs:string" minOccurs="0" />
+              <xs:element name="chartOfAccount" msprop:Generator_ColumnVarNameInTable="columnchartOfAccount" msprop:Generator_ColumnPropNameInRow="chartOfAccount" msprop:Generator_ColumnPropNameInTable="chartOfAccountColumn" msprop:Generator_UserColumnName="chartOfAccount" type="xs:string" minOccurs="0" />
+              <xs:element name="ChequeNo" msprop:Generator_ColumnVarNameInTable="columnChequeNo" msprop:Generator_ColumnPropNameInRow="ChequeNo" msprop:Generator_ColumnPropNameInTable="ChequeNoColumn" msprop:Generator_UserColumnName="ChequeNo" type="xs:string" minOccurs="0" />
+              <xs:element name="ReceiveFrom" msprop:Generator_ColumnVarNameInTable="columnReceiveFrom" msprop:Generator_ColumnPropNameInRow="ReceiveFrom" msprop:Generator_ColumnPropNameInTable="ReceiveFromColumn" msprop:Generator_UserColumnName="ReceiveFrom" type="xs:string" minOccurs="0" />
+              <xs:element name="CreatedBy" msprop:Generator_ColumnVarNameInTable="columnCreatedBy" msprop:Generator_ColumnPropNameInRow="CreatedBy" msprop:Generator_ColumnPropNameInTable="CreatedByColumn" msprop:Generator_UserColumnName="CreatedBy" type="xs:string" minOccurs="0" />
+              <xs:element name="CreatedDate" msprop:Generator_ColumnVarNameInTable="columnCreatedDate" msprop:Generator_ColumnPropNameInRow="CreatedDate" msprop:Generator_ColumnPropNameInTable="CreatedDateColumn" msprop:Generator_UserColumnName="CreatedDate" type="xs:string" minOccurs="0" />
+              <xs:element name="PostedDate" msprop:Generator_ColumnVarNameInTable="columnPostedDate" msprop:Generator_ColumnPropNameInRow="PostedDate" msprop:Generator_ColumnPropNameInTable="PostedDateColumn" msprop:Generator_UserColumnName="PostedDate" type="xs:string" minOccurs="0" />
+              <xs:element name="PostedBy" msprop:Generator_ColumnVarNameInTable="columnPostedBy" msprop:Generator_ColumnPropNameInRow="PostedBy" msprop:Generator_ColumnPropNameInTable="PostedByColumn" msprop:Generator_UserColumnName="PostedBy" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

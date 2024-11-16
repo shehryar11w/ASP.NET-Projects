@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ActiveDebugProfile>https</ActiveDebugProfile>
+    <Controller_SelectedScaffolderID>MvcControllerWithContextScaffolder</Controller_SelectedScaffolderID>
+    <Controller_SelectedScaffolderCategoryPath>root/Common/MVC/Controller</Controller_SelectedScaffolderCategoryPath>
+    <WebStackScaffolding_ControllerDialogWidth>650</WebStackScaffolding_ControllerDialogWidth>
+    <WebStackScaffolding_IsLayoutPageSelected>True</WebStackScaffolding_IsLayoutPageSelected>
+    <WebStackScaffolding_IsPartialViewSelected>True</WebStackScaffolding_IsPartialViewSelected>
+    <WebStackScaffolding_IsReferencingScriptLibrariesSelected>True</WebStackScaffolding_IsReferencingScriptLibrariesSelected>
+    <WebStackScaffolding_LayoutPageFile />
+    <WebStackScaffolding_DbContextTypeFullName>Meeting_Manager.Data.ApplicationDbContext</WebStackScaffolding_DbContextTypeFullName>
+    <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
+    <WebStackScaffolding_IsViewGenerationSelected>True</WebStackScaffolding_IsViewGenerationSelected>
+    <View_SelectedScaffolderID>RazorViewScaffolder</View_SelectedScaffolderID>
+    <View_SelectedScaffolderCategoryPath>root/Common/MVC/View</View_SelectedScaffolderCategoryPath>
+    <WebStackScaffolding_ViewDialogWidth>650</WebStackScaffolding_ViewDialogWidth>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Update="DataSetForReports\5to8FinalReportCardDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\AccountsLedgerDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\AlphaFeeVoucherDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\AlphaTripDetailsDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\ATAttendanceDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\BooksBarcodeDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\BooksReportDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\CampusAttendanceSummaryDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\candidateEvaluation.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\CharacterCertificateDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\ChartOfAccountDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\ClassStudentReportDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\Comments.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\ComponentStageDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\EduationStatus.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\EvaluationFormDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\EvaluationFormGradingKeyDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\FeeDetailReportDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\FeeOverDueDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\FeePendingReportDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\FeeSummaryReportDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\FeeVoucher.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\FixedAssetGoodsIssueNoteDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\GateAttendancesDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\GoodsReceivedNoteDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\GradeDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\GroupAttendanceDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\GroupAttendances.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\GroupAttendancesDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\GroupTestDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\JobApplication.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\JournalVoucherDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\LeavingCertificateDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\LeftStudentsReportDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\MarkSheetDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\MatrixReportDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\MockExam.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\MonthlyAttendanceReportDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\MultiplePunchSummaryDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\OLevelGradesDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\OverAllResultDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\PaymentVoucherDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\PayrollListDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\PaySlipDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\Points.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\PurchaseOrderDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\PurchaseQuotationDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\PurchaseRequistionDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\PurchaseReturnDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\ReceivingVoucherDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\RegisterAttendanceReportDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\ReportCardDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\ReportCardElementry.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\ReportFooter.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\ReportHeader.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\ReportRemarksDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\RolesRightsDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\SchoolInfoDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\SpecialDiscountReportDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\StaffAttendanceReportDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\staffAttendanceSummariesDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\StaffMonthlyAttendanceReportDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\StaffPaySlip.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\StaffRegisterAttendanceReportDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\StaffReportDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\StockLedgerDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\StudentAdmissionDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\StudentAttendanceReportDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\StudentColour.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\StudentDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\StudentDetailReportDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\StudentExamReportsDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\StudentIdCardDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\StudentInfoDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\StudentMarksSheetReportDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\StudentMatrixReportDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\StudentReportCardInfoDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\StudentReportDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\StudentResultsDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\StudentSecondaryDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\StudentStrengthReportDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\StudentTestResultDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\SubjectComponentDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\SubjectPercentileResult.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\SubjectResultsDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\SummaryStudentReportDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\TeacherAttendanceReportDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\TestDatesDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\TestNameDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\TrialBalanceDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\UnEqualVoucherDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSetForReports\UnPostedVoucherDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+</Project>

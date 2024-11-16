@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReportRemarksDataSet" targetNamespace="http://tempuri.org/ReportRemarksDataSet.xsd" xmlns:mstns="http://tempuri.org/ReportRemarksDataSet.xsd" xmlns="http://tempuri.org/ReportRemarksDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ReportRemarksDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ReportRemarksDataSet" msprop:Generator_UserDSName="ReportRemarksDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ReportRemarks" msprop:Generator_TableClassName="ReportRemarksDataTable" msprop:Generator_TableVarName="tableReportRemarks" msprop:Generator_RowChangedName="ReportRemarksRowChanged" msprop:Generator_TablePropName="ReportRemarks" msprop:Generator_RowDeletingName="ReportRemarksRowDeleting" msprop:Generator_RowChangingName="ReportRemarksRowChanging" msprop:Generator_RowEvHandlerName="ReportRemarksRowChangeEventHandler" msprop:Generator_RowDeletedName="ReportRemarksRowDeleted" msprop:Generator_RowClassName="ReportRemarksRow" msprop:Generator_UserTableName="ReportRemarks" msprop:Generator_RowEvArgName="ReportRemarksRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ClassTeacherRemarksTerm2" msdata:Caption="ClassTeacherRemarks" msprop:Generator_ColumnVarNameInTable="columnClassTeacherRemarksTerm2" msprop:Generator_ColumnPropNameInRow="ClassTeacherRemarksTerm2" msprop:Generator_ColumnPropNameInTable="ClassTeacherRemarksTerm2Column" msprop:Generator_UserColumnName="ClassTeacherRemarksTerm2" type="xs:string" minOccurs="0" />
+              <xs:element name="ClassTeacherRemarks" msprop:Generator_ColumnVarNameInTable="columnClassTeacherRemarks" msprop:Generator_ColumnPropNameInRow="ClassTeacherRemarks" msprop:Generator_ColumnPropNameInTable="ClassTeacherRemarksColumn" msprop:Generator_UserColumnName="ClassTeacherRemarks" type="xs:string" minOccurs="0" />
+              <xs:element name="PrincipleRemarksTerm2" msdata:Caption="PrincipleRemarks" msprop:Generator_ColumnVarNameInTable="columnPrincipleRemarksTerm2" msprop:Generator_ColumnPropNameInRow="PrincipleRemarksTerm2" msprop:Generator_ColumnPropNameInTable="PrincipleRemarksTerm2Column" msprop:Generator_UserColumnName="PrincipleRemarksTerm2" type="xs:string" minOccurs="0" />
+              <xs:element name="PrincipleRemarks" msprop:Generator_ColumnVarNameInTable="columnPrincipleRemarks" msprop:Generator_ColumnPropNameInRow="PrincipleRemarks" msprop:Generator_ColumnPropNameInTable="PrincipleRemarksColumn" msprop:Generator_UserColumnName="PrincipleRemarks" type="xs:string" minOccurs="0" />
+              <xs:element name="SpecialMentionTerm2" msdata:Caption="SpecialMention" msprop:Generator_ColumnVarNameInTable="columnSpecialMentionTerm2" msprop:Generator_ColumnPropNameInRow="SpecialMentionTerm2" msprop:Generator_ColumnPropNameInTable="SpecialMentionTerm2Column" msprop:Generator_UserColumnName="SpecialMentionTerm2" type="xs:string" minOccurs="0" />
+              <xs:element name="SpecialMention" msprop:Generator_ColumnVarNameInTable="columnSpecialMention" msprop:Generator_ColumnPropNameInRow="SpecialMention" msprop:Generator_ColumnPropNameInTable="SpecialMentionColumn" msprop:Generator_UserColumnName="SpecialMention" type="xs:string" minOccurs="0" />
+              <xs:element name="ISPEHCommentTerm2" msdata:Caption="ISPEHComment" msprop:Generator_ColumnVarNameInTable="columnISPEHCommentTerm2" msprop:Generator_ColumnPropNameInRow="ISPEHCommentTerm2" msprop:Generator_ColumnPropNameInTable="ISPEHCommentTerm2Column" msprop:Generator_UserColumnName="ISPEHCommentTerm2" type="xs:string" minOccurs="0" />
+              <xs:element name="ISPEHComment" msprop:Generator_ColumnVarNameInTable="columnISPEHComment" msprop:Generator_ColumnPropNameInRow="ISPEHComment" msprop:Generator_ColumnPropNameInTable="ISPEHCommentColumn" msprop:Generator_UserColumnName="ISPEHComment" type="xs:string" minOccurs="0" />
+              <xs:element name="Days_Enrolled" msprop:Generator_ColumnVarNameInTable="columnDays_Enrolled" msprop:Generator_ColumnPropNameInRow="Days_Enrolled" msprop:Generator_ColumnPropNameInTable="Days_EnrolledColumn" msprop:Generator_UserColumnName="Days_Enrolled" type="xs:string" minOccurs="0" />
+              <xs:element name="Days_Absent" msprop:Generator_ColumnVarNameInTable="columnDays_Absent" msprop:Generator_ColumnPropNameInRow="Days_Absent" msprop:Generator_ColumnPropNameInTable="Days_AbsentColumn" msprop:Generator_UserColumnName="Days_Absent" type="xs:string" minOccurs="0" />
+              <xs:element name="Days_Tardy" msprop:Generator_ColumnVarNameInTable="columnDays_Tardy" msprop:Generator_ColumnPropNameInRow="Days_Tardy" msprop:Generator_ColumnPropNameInTable="Days_TardyColumn" msprop:Generator_UserColumnName="Days_Tardy" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

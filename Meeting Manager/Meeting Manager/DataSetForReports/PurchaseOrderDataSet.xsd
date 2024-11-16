@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PurchaseOrderDataSet" targetNamespace="http://tempuri.org/PurchaseOrderDataSet.xsd" xmlns:mstns="http://tempuri.org/PurchaseOrderDataSet.xsd" xmlns="http://tempuri.org/PurchaseOrderDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PurchaseOrderDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="PurchaseOrderDataSet" msprop:Generator_UserDSName="PurchaseOrderDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PurchaseOrder" msprop:Generator_TableClassName="PurchaseOrderDataTable" msprop:Generator_TableVarName="tablePurchaseOrder" msprop:Generator_TablePropName="PurchaseOrder" msprop:Generator_RowDeletingName="PurchaseOrderRowDeleting" msprop:Generator_RowChangingName="PurchaseOrderRowChanging" msprop:Generator_RowEvHandlerName="PurchaseOrderRowChangeEventHandler" msprop:Generator_RowDeletedName="PurchaseOrderRowDeleted" msprop:Generator_UserTableName="PurchaseOrder" msprop:Generator_RowChangedName="PurchaseOrderRowChanged" msprop:Generator_RowEvArgName="PurchaseOrderRowChangeEvent" msprop:Generator_RowClassName="PurchaseOrderRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PurchaseOrder_Code" msprop:Generator_ColumnVarNameInTable="columnPurchaseOrder_Code" msprop:Generator_ColumnPropNameInRow="PurchaseOrder_Code" msprop:Generator_ColumnPropNameInTable="PurchaseOrder_CodeColumn" msprop:Generator_UserColumnName="PurchaseOrder_Code" type="xs:string" minOccurs="0" />
+              <xs:element name="PurchaseOrder_Date" msprop:Generator_ColumnVarNameInTable="columnPurchaseOrder_Date" msprop:Generator_ColumnPropNameInRow="PurchaseOrder_Date" msprop:Generator_ColumnPropNameInTable="PurchaseOrder_DateColumn" msprop:Generator_UserColumnName="PurchaseOrder_Date" type="xs:string" minOccurs="0" />
+              <xs:element name="PurchaseOrder_ModeOfPayment" msprop:Generator_ColumnVarNameInTable="columnPurchaseOrder_ModeOfPayment" msprop:Generator_ColumnPropNameInRow="PurchaseOrder_ModeOfPayment" msprop:Generator_ColumnPropNameInTable="PurchaseOrder_ModeOfPaymentColumn" msprop:Generator_UserColumnName="PurchaseOrder_ModeOfPayment" type="xs:string" minOccurs="0" />
+              <xs:element name="PurchaseOrder_PurchaseType" msprop:Generator_ColumnVarNameInTable="columnPurchaseOrder_PurchaseType" msprop:Generator_ColumnPropNameInRow="PurchaseOrder_PurchaseType" msprop:Generator_ColumnPropNameInTable="PurchaseOrder_PurchaseTypeColumn" msprop:Generator_UserColumnName="PurchaseOrder_PurchaseType" type="xs:string" minOccurs="0" />
+              <xs:element name="PurchaseOrderDetail_Quantity" msprop:Generator_ColumnVarNameInTable="columnPurchaseOrderDetail_Quantity" msprop:Generator_ColumnPropNameInRow="PurchaseOrderDetail_Quantity" msprop:Generator_ColumnPropNameInTable="PurchaseOrderDetail_QuantityColumn" msprop:Generator_UserColumnName="PurchaseOrderDetail_Quantity" type="xs:string" minOccurs="0" />
+              <xs:element name="PurchaseOrderDetail_UnitPrice" msprop:Generator_ColumnVarNameInTable="columnPurchaseOrderDetail_UnitPrice" msprop:Generator_ColumnPropNameInRow="PurchaseOrderDetail_UnitPrice" msprop:Generator_ColumnPropNameInTable="PurchaseOrderDetail_UnitPriceColumn" msprop:Generator_UserColumnName="PurchaseOrderDetail_UnitPrice" type="xs:string" minOccurs="0" />
+              <xs:element name="Item" msprop:Generator_ColumnVarNameInTable="columnItem" msprop:Generator_ColumnPropNameInRow="Item" msprop:Generator_ColumnPropNameInTable="ItemColumn" msprop:Generator_UserColumnName="Item" type="xs:string" minOccurs="0" />
+              <xs:element name="Unit" msprop:Generator_ColumnVarNameInTable="columnUnit" msprop:Generator_ColumnPropNameInRow="Unit" msprop:Generator_ColumnPropNameInTable="UnitColumn" msprop:Generator_UserColumnName="Unit" type="xs:string" minOccurs="0" />
+              <xs:element name="Supplier" msprop:Generator_ColumnVarNameInTable="columnSupplier" msprop:Generator_ColumnPropNameInRow="Supplier" msprop:Generator_ColumnPropNameInTable="SupplierColumn" msprop:Generator_UserColumnName="Supplier" type="xs:string" minOccurs="0" />
+              <xs:element name="PurchaseQuotation_Code" msprop:Generator_ColumnVarNameInTable="columnPurchaseQuotation_Code" msprop:Generator_ColumnPropNameInRow="PurchaseQuotation_Code" msprop:Generator_ColumnPropNameInTable="PurchaseQuotation_CodeColumn" msprop:Generator_UserColumnName="PurchaseQuotation_Code" type="xs:string" minOccurs="0" />
+              <xs:element name="PurchaseQuotation_Date" msprop:Generator_ColumnVarNameInTable="columnPurchaseQuotation_Date" msprop:Generator_ColumnPropNameInRow="PurchaseQuotation_Date" msprop:Generator_ColumnPropNameInTable="PurchaseQuotation_DateColumn" msprop:Generator_UserColumnName="PurchaseQuotation_Date" type="xs:string" minOccurs="0" />
+              <xs:element name="PurchaseOrder_FreightExpense" msprop:Generator_ColumnVarNameInTable="columnPurchaseOrder_FreightExpense" msprop:Generator_ColumnPropNameInRow="PurchaseOrder_FreightExpense" msprop:Generator_ColumnPropNameInTable="PurchaseOrder_FreightExpenseColumn" msprop:Generator_UserColumnName="PurchaseOrder_FreightExpense" type="xs:string" minOccurs="0" />
+              <xs:element name="S_No" msprop:Generator_ColumnVarNameInTable="columnS_No" msprop:Generator_ColumnPropNameInRow="S_No" msprop:Generator_ColumnPropNameInTable="S_NoColumn" msprop:Generator_UserColumnName="S_No" type="xs:string" minOccurs="0" />
+              <xs:element name="GeneratedBy" msprop:Generator_ColumnVarNameInTable="columnGeneratedBy" msprop:Generator_ColumnPropNameInRow="GeneratedBy" msprop:Generator_ColumnPropNameInTable="GeneratedByColumn" msprop:Generator_UserColumnName="GeneratedBy" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

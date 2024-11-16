@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReportHeader" targetNamespace="http://tempuri.org/ReportHeader.xsd" xmlns:mstns="http://tempuri.org/ReportHeader.xsd" xmlns="http://tempuri.org/ReportHeader.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ReportHeader" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ReportHeader" msprop:Generator_UserDSName="ReportHeader">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ReportHeader" msprop:Generator_TableClassName="ReportHeaderDataTable" msprop:Generator_TableVarName="tableReportHeader" msprop:Generator_TablePropName="_ReportHeader" msprop:Generator_RowDeletingName="ReportHeaderRowDeleting" msprop:Generator_RowChangingName="ReportHeaderRowChanging" msprop:Generator_RowEvHandlerName="ReportHeaderRowChangeEventHandler" msprop:Generator_RowDeletedName="ReportHeaderRowDeleted" msprop:Generator_UserTableName="ReportHeader" msprop:Generator_RowChangedName="ReportHeaderRowChanged" msprop:Generator_RowEvArgName="ReportHeaderRowChangeEvent" msprop:Generator_RowClassName="ReportHeaderRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CampusName" msdata:Caption="Subject" msprop:Generator_ColumnVarNameInTable="columnCampusName" msprop:Generator_ColumnPropNameInRow="CampusName" msprop:Generator_ColumnPropNameInTable="CampusNameColumn" msprop:Generator_UserColumnName="CampusName" type="xs:string" minOccurs="0" />
+              <xs:element name="Heading" msprop:Generator_ColumnVarNameInTable="columnHeading" msprop:Generator_ColumnPropNameInRow="Heading" msprop:Generator_ColumnPropNameInTable="HeadingColumn" msprop:Generator_UserColumnName="Heading" type="xs:string" minOccurs="0" />
+              <xs:element name="SubHeading" msprop:Generator_ColumnVarNameInTable="columnSubHeading" msprop:Generator_ColumnPropNameInRow="SubHeading" msprop:Generator_ColumnPropNameInTable="SubHeadingColumn" msprop:Generator_UserColumnName="SubHeading" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

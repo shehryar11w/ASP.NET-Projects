@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="StudentColour" targetNamespace="http://tempuri.org/StudentColour.xsd" xmlns:mstns="http://tempuri.org/StudentColour.xsd" xmlns="http://tempuri.org/StudentColour.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="StudentColour" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="StudentColour" msprop:Generator_UserDSName="StudentColour">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="StudentColour" msprop:Generator_TableClassName="StudentColourDataTable" msprop:Generator_TableVarName="tableStudentColour" msprop:Generator_TablePropName="_StudentColour" msprop:Generator_RowDeletingName="StudentColourRowDeleting" msprop:Generator_RowChangingName="StudentColourRowChanging" msprop:Generator_RowEvHandlerName="StudentColourRowChangeEventHandler" msprop:Generator_RowDeletedName="StudentColourRowDeleted" msprop:Generator_UserTableName="StudentColour" msprop:Generator_RowChangedName="StudentColourRowChanged" msprop:Generator_RowEvArgName="StudentColourRowChangeEvent" msprop:Generator_RowClassName="StudentColourRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IsBlack" msprop:Generator_ColumnVarNameInTable="columnIsBlack" msprop:Generator_ColumnPropNameInRow="IsBlack" msprop:Generator_ColumnPropNameInTable="IsBlackColumn" msprop:Generator_UserColumnName="IsBlack" type="xs:string" minOccurs="0" />
+              <xs:element name="IsBlue" msprop:Generator_ColumnVarNameInTable="columnIsBlue" msprop:Generator_ColumnPropNameInRow="IsBlue" msprop:Generator_ColumnPropNameInTable="IsBlueColumn" msprop:Generator_UserColumnName="IsBlue" type="xs:string" minOccurs="0" />
+              <xs:element name="IsDardGoldenRod" msprop:Generator_ColumnVarNameInTable="columnIsDardGoldenRod" msprop:Generator_ColumnPropNameInRow="IsDardGoldenRod" msprop:Generator_ColumnPropNameInTable="IsDardGoldenRodColumn" msprop:Generator_UserColumnName="IsDardGoldenRod" type="xs:string" minOccurs="0" />
+              <xs:element name="IsIndigo" msprop:Generator_ColumnVarNameInTable="columnIsIndigo" msprop:Generator_ColumnPropNameInRow="IsIndigo" msprop:Generator_ColumnPropNameInTable="IsIndigoColumn" msprop:Generator_UserColumnName="IsIndigo" type="xs:string" minOccurs="0" />
+              <xs:element name="IsLimeGreen" msprop:Generator_ColumnVarNameInTable="columnIsLimeGreen" msprop:Generator_ColumnPropNameInRow="IsLimeGreen" msprop:Generator_ColumnPropNameInTable="IsLimeGreenColumn" msprop:Generator_UserColumnName="IsLimeGreen" type="xs:string" minOccurs="0" />
+              <xs:element name="IsOrange" msprop:Generator_ColumnVarNameInTable="columnIsOrange" msprop:Generator_ColumnPropNameInRow="IsOrange" msprop:Generator_ColumnPropNameInTable="IsOrangeColumn" msprop:Generator_UserColumnName="IsOrange" type="xs:string" minOccurs="0" />
+              <xs:element name="IsPink" msprop:Generator_ColumnVarNameInTable="columnIsPink" msprop:Generator_ColumnPropNameInRow="IsPink" msprop:Generator_ColumnPropNameInTable="IsPinkColumn" msprop:Generator_UserColumnName="IsPink" type="xs:string" minOccurs="0" />
+              <xs:element name="IsRed" msprop:Generator_ColumnVarNameInTable="columnIsRed" msprop:Generator_ColumnPropNameInRow="IsRed" msprop:Generator_ColumnPropNameInTable="IsRedColumn" msprop:Generator_UserColumnName="IsRed" type="xs:string" minOccurs="0" />
+              <xs:element name="IsWhite" msprop:Generator_ColumnVarNameInTable="columnIsWhite" msprop:Generator_ColumnPropNameInRow="IsWhite" msprop:Generator_ColumnPropNameInTable="IsWhiteColumn" msprop:Generator_UserColumnName="IsWhite" type="xs:string" minOccurs="0" />
+              <xs:element name="IsYellow" msprop:Generator_ColumnVarNameInTable="columnIsYellow" msprop:Generator_ColumnPropNameInRow="IsYellow" msprop:Generator_ColumnPropNameInTable="IsYellowColumn" msprop:Generator_UserColumnName="IsYellow" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

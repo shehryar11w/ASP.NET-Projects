@@ -1,0 +1,59 @@
+﻿@model IEnumerable<ContosoUniversity1.Models.Course>
+
+@{
+    ViewBag.Title = "Courses";
+}
+
+<h2>Courses</h2>
+
+<p>
+    <button type="button" class="btn btn-success" onclick="location.href='@Url.Action("Create", "Course")'">Create New</button>
+</p>
+<div class="card">
+    <div class="table-responsive">
+        <table class="table align-items-center mb-0">
+            <thead>
+                <tr>
+                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-9">
+                        @Html.DisplayNameFor(model => model.CourseID)
+                    </th>
+                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-9">
+                        @Html.DisplayNameFor(model => model.Title)
+                    </th>
+                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-9">
+                        @Html.DisplayNameFor(model => model.Credits)
+                    </th>
+                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-9">
+                        Department
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td class="text-xs font-weight-bold mb-0">
+                            <h6>@Html.DisplayFor(modelItem => item.CourseID)</h6>
+                        </td>
+                        <td class="text-xs font-weight-bold mb-0">
+                            <h6>@Html.DisplayFor(modelItem => item.Title)</h6>
+                        </td>
+                        <td class="text-xs font-weight-bold mb-0">
+                            <h6>@Html.DisplayFor(modelItem => item.Credits)</h6>
+                        </td>
+                        <td class="text-xs font-weight-bold mb-0">
+                            <h6>@Html.DisplayFor(modelItem => item.Department.Name)</h6>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-default" onclick="location.href='@Url.Action("Edit", "Edit", new { id = item.CourseID })'">Edit</button>
+                            <button type="button" class="btn btn-default" onclick="location.href='@Url.Action("Details", "Details", new { id = item.CourseID })'">Details</button>
+                            <button type="button" class="btn btn-danger" onclick="location.href='@Url.Action("Delete", "Delete", new { id = item.CourseID })'">Delete</button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+
+        </table>
+    </div>
+</div>

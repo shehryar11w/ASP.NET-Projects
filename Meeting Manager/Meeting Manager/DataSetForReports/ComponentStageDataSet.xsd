@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ComponentStageDataSet" targetNamespace="http://tempuri.org/ComponentStageDataSet.xsd" xmlns:mstns="http://tempuri.org/ComponentStageDataSet.xsd" xmlns="http://tempuri.org/ComponentStageDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ComponentStageDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ComponentStageDataSet" msprop:Generator_UserDSName="ComponentStageDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ComponentStages" msprop:Generator_TableClassName="ComponentStagesDataTable" msprop:Generator_TableVarName="tableComponentStages" msprop:Generator_TablePropName="ComponentStages" msprop:Generator_RowDeletingName="ComponentStagesRowDeleting" msprop:Generator_RowChangingName="ComponentStagesRowChanging" msprop:Generator_RowEvHandlerName="ComponentStagesRowChangeEventHandler" msprop:Generator_RowDeletedName="ComponentStagesRowDeleted" msprop:Generator_UserTableName="ComponentStages" msprop:Generator_RowChangedName="ComponentStagesRowChanged" msprop:Generator_RowEvArgName="ComponentStagesRowChangeEvent" msprop:Generator_RowClassName="ComponentStagesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Stage" msprop:Generator_ColumnVarNameInTable="columnStage" msprop:Generator_ColumnPropNameInRow="Stage" msprop:Generator_ColumnPropNameInTable="StageColumn" msprop:Generator_UserColumnName="Stage" type="xs:string" minOccurs="0" />
+              <xs:element name="Term1" msprop:Generator_ColumnVarNameInTable="columnTerm1" msprop:Generator_ColumnPropNameInRow="Term1" msprop:Generator_ColumnPropNameInTable="Term1Column" msprop:Generator_UserColumnName="Term1" type="xs:string" minOccurs="0" />
+              <xs:element name="Term2" msprop:Generator_ColumnVarNameInTable="columnTerm2" msprop:Generator_ColumnPropNameInRow="Term2" msprop:Generator_ColumnPropNameInTable="Term2Column" msprop:Generator_UserColumnName="Term2" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

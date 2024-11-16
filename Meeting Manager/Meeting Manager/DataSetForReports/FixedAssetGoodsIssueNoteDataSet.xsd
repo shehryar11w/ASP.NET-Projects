@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="GoodsIssueNoteDataSet" targetNamespace="http://tempuri.org/GoodsIssueNoteDataSet.xsd" xmlns:mstns="http://tempuri.org/GoodsIssueNoteDataSet.xsd" xmlns="http://tempuri.org/GoodsIssueNoteDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="GoodsIssueNoteDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="GoodsIssueNoteDataSet" msprop:Generator_DataSetName="GoodsIssueNoteDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="FixedAssetGoodsIssueNote" msprop:Generator_RowEvHandlerName="FixedAssetGoodsIssueNoteRowChangeEventHandler" msprop:Generator_RowDeletedName="FixedAssetGoodsIssueNoteRowDeleted" msprop:Generator_RowDeletingName="FixedAssetGoodsIssueNoteRowDeleting" msprop:Generator_RowEvArgName="FixedAssetGoodsIssueNoteRowChangeEvent" msprop:Generator_TablePropName="FixedAssetGoodsIssueNote" msprop:Generator_RowChangedName="FixedAssetGoodsIssueNoteRowChanged" msprop:Generator_RowChangingName="FixedAssetGoodsIssueNoteRowChanging" msprop:Generator_TableClassName="FixedAssetGoodsIssueNoteDataTable" msprop:Generator_RowClassName="FixedAssetGoodsIssueNoteRow" msprop:Generator_TableVarName="tableFixedAssetGoodsIssueNote" msprop:Generator_UserTableName="FixedAssetGoodsIssueNote">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="GoodsIssueNote_Code" msprop:Generator_ColumnPropNameInRow="GoodsIssueNote_Code" msprop:Generator_ColumnPropNameInTable="GoodsIssueNote_CodeColumn" msprop:Generator_ColumnVarNameInTable="columnGoodsIssueNote_Code" msprop:Generator_UserColumnName="GoodsIssueNote_Code" type="xs:string" minOccurs="0" />
+              <xs:element name="GoodsIssueNote_Date" msprop:Generator_ColumnPropNameInRow="GoodsIssueNote_Date" msprop:Generator_ColumnPropNameInTable="GoodsIssueNote_DateColumn" msprop:Generator_ColumnVarNameInTable="columnGoodsIssueNote_Date" msprop:Generator_UserColumnName="GoodsIssueNote_Date" type="xs:string" minOccurs="0" />
+              <xs:element name="GoodsReceivedNote_Code" msprop:Generator_ColumnPropNameInRow="GoodsReceivedNote_Code" msprop:Generator_ColumnPropNameInTable="GoodsReceivedNote_CodeColumn" msprop:Generator_ColumnVarNameInTable="columnGoodsReceivedNote_Code" msprop:Generator_UserColumnName="GoodsReceivedNote_Code" type="xs:string" minOccurs="0" />
+              <xs:element name="GoodsIssueNote_IssuanceFor" msprop:Generator_ColumnPropNameInRow="GoodsIssueNote_IssuanceFor" msprop:Generator_ColumnPropNameInTable="GoodsIssueNote_IssuanceForColumn" msprop:Generator_ColumnVarNameInTable="columnGoodsIssueNote_IssuanceFor" msprop:Generator_UserColumnName="GoodsIssueNote_IssuanceFor" type="xs:string" minOccurs="0" />
+              <xs:element name="GoodsIssueNoteDetail_Quantity" msprop:Generator_ColumnPropNameInRow="GoodsIssueNoteDetail_Quantity" msprop:Generator_ColumnPropNameInTable="GoodsIssueNoteDetail_QuantityColumn" msprop:Generator_ColumnVarNameInTable="columnGoodsIssueNoteDetail_Quantity" msprop:Generator_UserColumnName="GoodsIssueNoteDetail_Quantity" type="xs:string" minOccurs="0" />
+              <xs:element name="Item" msprop:Generator_ColumnPropNameInRow="Item" msprop:Generator_ColumnPropNameInTable="ItemColumn" msprop:Generator_ColumnVarNameInTable="columnItem" msprop:Generator_UserColumnName="Item" type="xs:string" minOccurs="0" />
+              <xs:element name="Unit" msprop:Generator_ColumnPropNameInRow="Unit" msprop:Generator_ColumnPropNameInTable="UnitColumn" msprop:Generator_ColumnVarNameInTable="columnUnit" msprop:Generator_UserColumnName="Unit" type="xs:string" minOccurs="0" />
+              <xs:element name="GoodsReceivedNote_Date" msprop:Generator_ColumnPropNameInRow="GoodsReceivedNote_Date" msprop:Generator_ColumnPropNameInTable="GoodsReceivedNote_DateColumn" msprop:Generator_ColumnVarNameInTable="columnGoodsReceivedNote_Date" msprop:Generator_UserColumnName="GoodsReceivedNote_Date" type="xs:string" minOccurs="0" />
+              <xs:element name="Freezed" msprop:Generator_ColumnPropNameInRow="Freezed" msprop:Generator_ColumnPropNameInTable="FreezedColumn" msprop:Generator_ColumnVarNameInTable="columnFreezed" msprop:Generator_UserColumnName="Freezed" type="xs:string" minOccurs="0" />
+              <xs:element name="GoodsIssueNote_Campus" msprop:Generator_ColumnPropNameInRow="GoodsIssueNote_Campus" msprop:Generator_ColumnPropNameInTable="GoodsIssueNote_CampusColumn" msprop:Generator_ColumnVarNameInTable="columnGoodsIssueNote_Campus" msprop:Generator_UserColumnName="GoodsIssueNote_Campus" type="xs:string" minOccurs="0" />
+              <xs:element name="GoodsIssueNote_Department" msprop:Generator_ColumnPropNameInRow="GoodsIssueNote_Department" msprop:Generator_ColumnPropNameInTable="GoodsIssueNote_DepartmentColumn" msprop:Generator_ColumnVarNameInTable="columnGoodsIssueNote_Department" msprop:Generator_UserColumnName="GoodsIssueNote_Department" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

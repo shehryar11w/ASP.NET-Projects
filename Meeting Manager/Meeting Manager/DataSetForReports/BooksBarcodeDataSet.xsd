@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="BooksBarcodeDataSet" targetNamespace="http://tempuri.org/BooksBarcodeDataSet.xsd" xmlns:mstns="http://tempuri.org/BooksBarcodeDataSet.xsd" xmlns="http://tempuri.org/BooksBarcodeDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="BooksBarcodeDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="BooksBarcodeDataSet" msprop:Generator_UserDSName="BooksBarcodeDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="BookBarcode" msprop:Generator_TableClassName="BookBarcodeDataTable" msprop:Generator_TableVarName="tableBookBarcode" msprop:Generator_RowChangedName="BookBarcodeRowChanged" msprop:Generator_TablePropName="BookBarcode" msprop:Generator_RowDeletingName="BookBarcodeRowDeleting" msprop:Generator_RowChangingName="BookBarcodeRowChanging" msprop:Generator_RowEvHandlerName="BookBarcodeRowChangeEventHandler" msprop:Generator_RowDeletedName="BookBarcodeRowDeleted" msprop:Generator_RowClassName="BookBarcodeRow" msprop:Generator_UserTableName="BookBarcode" msprop:Generator_RowEvArgName="BookBarcodeRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BookName" msprop:Generator_ColumnVarNameInTable="columnBookName" msprop:Generator_ColumnPropNameInRow="BookName" msprop:Generator_ColumnPropNameInTable="BookNameColumn" msprop:Generator_UserColumnName="BookName" type="xs:string" minOccurs="0" />
+              <xs:element name="BookBarcode_Barcode" msprop:Generator_ColumnVarNameInTable="columnBookBarcode_Barcode" msprop:Generator_ColumnPropNameInRow="BookBarcode_Barcode" msprop:Generator_ColumnPropNameInTable="BookBarcode_BarcodeColumn" msprop:Generator_UserColumnName="BookBarcode_Barcode" type="xs:string" minOccurs="0" />
+              <xs:element name="Shelf" msprop:Generator_ColumnVarNameInTable="columnShelf" msprop:Generator_ColumnPropNameInRow="Shelf" msprop:Generator_ColumnPropNameInTable="ShelfColumn" msprop:Generator_UserColumnName="Shelf" type="xs:string" minOccurs="0" />
+              <xs:element name="campus" msprop:Generator_ColumnVarNameInTable="columncampus" msprop:Generator_ColumnPropNameInRow="campus" msprop:Generator_ColumnPropNameInTable="campusColumn" msprop:Generator_UserColumnName="campus" type="xs:string" minOccurs="0" />
+              <xs:element name="BookBarcodeImage" msprop:Generator_ColumnVarNameInTable="columnBookBarcodeImage" msprop:Generator_ColumnPropNameInRow="BookBarcodeImage" msprop:Generator_ColumnPropNameInTable="BookBarcodeImageColumn" msprop:Generator_UserColumnName="BookBarcodeImage" type="xs:string" minOccurs="0" />
+              <xs:element name="SchoolImg" msprop:Generator_ColumnVarNameInTable="columnSchoolImg" msprop:Generator_ColumnPropNameInRow="SchoolImg" msprop:Generator_ColumnPropNameInTable="SchoolImgColumn" msprop:Generator_UserColumnName="SchoolImg" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

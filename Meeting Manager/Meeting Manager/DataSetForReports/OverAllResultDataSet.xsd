@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="OverAllResultDataSet" targetNamespace="http://tempuri.org/OverAllResultDataSet.xsd" xmlns:mstns="http://tempuri.org/OverAllResultDataSet.xsd" xmlns="http://tempuri.org/OverAllResultDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="OverAllResultDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="OverAllResultDataSet" msprop:Generator_UserDSName="OverAllResultDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="OverAllResult" msprop:Generator_TableClassName="OverAllResultDataTable" msprop:Generator_TableVarName="tableOverAllResult" msprop:Generator_TablePropName="OverAllResult" msprop:Generator_RowDeletingName="OverAllResultRowDeleting" msprop:Generator_RowChangingName="OverAllResultRowChanging" msprop:Generator_RowEvHandlerName="OverAllResultRowChangeEventHandler" msprop:Generator_RowDeletedName="OverAllResultRowDeleted" msprop:Generator_UserTableName="OverAllResult" msprop:Generator_RowChangedName="OverAllResultRowChanged" msprop:Generator_RowEvArgName="OverAllResultRowChangeEvent" msprop:Generator_RowClassName="OverAllResultRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Percentage" msdata:Caption="Grade" msprop:Generator_ColumnVarNameInTable="columnPercentage" msprop:Generator_ColumnPropNameInRow="Percentage" msprop:Generator_ColumnPropNameInTable="PercentageColumn" msprop:Generator_UserColumnName="Percentage" type="xs:string" minOccurs="0" />
+              <xs:element name="Grade" msprop:Generator_ColumnVarNameInTable="columnGrade" msprop:Generator_ColumnPropNameInRow="Grade" msprop:Generator_ColumnPropNameInTable="GradeColumn" msprop:Generator_UserColumnName="Grade" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

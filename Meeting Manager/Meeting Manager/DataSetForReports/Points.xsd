@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Points" targetNamespace="http://tempuri.org/Points.xsd" xmlns:mstns="http://tempuri.org/Points.xsd" xmlns="http://tempuri.org/Points.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Points" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Points" msprop:Generator_UserDSName="Points">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Points" msprop:Generator_TableClassName="PointsDataTable" msprop:Generator_TableVarName="tablePoints" msprop:Generator_TablePropName="_Points" msprop:Generator_RowDeletingName="PointsRowDeleting" msprop:Generator_RowChangingName="PointsRowChanging" msprop:Generator_RowEvHandlerName="PointsRowChangeEventHandler" msprop:Generator_RowDeletedName="PointsRowDeleted" msprop:Generator_UserTableName="Points" msprop:Generator_RowChangedName="PointsRowChanged" msprop:Generator_RowEvArgName="PointsRowChangeEvent" msprop:Generator_RowClassName="PointsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:string" minOccurs="0" />
+              <xs:element name="Comments" msprop:Generator_ColumnVarNameInTable="columnComments" msprop:Generator_ColumnPropNameInRow="Comments" msprop:Generator_ColumnPropNameInTable="CommentsColumn" msprop:Generator_UserColumnName="Comments" type="xs:string" minOccurs="0" />
+              <xs:element name="OptionId" msprop:Generator_ColumnVarNameInTable="columnOptionId" msprop:Generator_ColumnPropNameInRow="OptionId" msprop:Generator_ColumnPropNameInTable="OptionIdColumn" msprop:Generator_UserColumnName="OptionId" type="xs:string" minOccurs="0" />
+              <xs:element name="Option" msprop:Generator_ColumnVarNameInTable="columnOption" msprop:Generator_ColumnPropNameInRow="Option" msprop:Generator_ColumnPropNameInTable="OptionColumn" msprop:Generator_UserColumnName="Option" type="xs:string" minOccurs="0" />
+              <xs:element name="KeyId" msprop:Generator_ColumnVarNameInTable="columnKeyId" msprop:Generator_ColumnPropNameInRow="KeyId" msprop:Generator_ColumnPropNameInTable="KeyIdColumn" msprop:Generator_UserColumnName="KeyId" type="xs:string" minOccurs="0" />
+              <xs:element name="Key" msprop:Generator_ColumnVarNameInTable="columnKey" msprop:Generator_ColumnPropNameInRow="Key" msprop:Generator_ColumnPropNameInTable="KeyColumn" msprop:Generator_UserColumnName="Key" type="xs:string" minOccurs="0" />
+              <xs:element name="CommentId" msprop:Generator_ColumnVarNameInTable="columnCommentId" msprop:Generator_ColumnPropNameInRow="CommentId" msprop:Generator_ColumnPropNameInTable="CommentIdColumn" msprop:Generator_UserColumnName="CommentId" type="xs:string" minOccurs="0" />
+              <xs:element name="Comment" msprop:Generator_ColumnVarNameInTable="columnComment" msprop:Generator_ColumnPropNameInRow="Comment" msprop:Generator_ColumnPropNameInTable="CommentColumn" msprop:Generator_UserColumnName="Comment" type="xs:string" minOccurs="0" />
+              <xs:element name="ExpectedSalary" msprop:Generator_ColumnVarNameInTable="columnExpectedSalary" msprop:Generator_ColumnPropNameInRow="ExpectedSalary" msprop:Generator_ColumnPropNameInTable="ExpectedSalaryColumn" msprop:Generator_UserColumnName="ExpectedSalary" type="xs:string" minOccurs="0" />
+              <xs:element name="CurrentSalary" msprop:Generator_ColumnVarNameInTable="columnCurrentSalary" msprop:Generator_ColumnPropNameInRow="CurrentSalary" msprop:Generator_ColumnPropNameInTable="CurrentSalaryColumn" msprop:Generator_UserColumnName="CurrentSalary" type="xs:string" minOccurs="0" />
+              <xs:element name="AvailableFrom" msprop:Generator_ColumnVarNameInTable="columnAvailableFrom" msprop:Generator_ColumnPropNameInRow="AvailableFrom" msprop:Generator_ColumnPropNameInTable="AvailableFromColumn" msprop:Generator_UserColumnName="AvailableFrom" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

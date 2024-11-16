@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="staffAttendanceSummariesDataSet" targetNamespace="http://tempuri.org/staffAttendanceSummariesDataSet.xsd" xmlns:mstns="http://tempuri.org/staffAttendanceSummariesDataSet.xsd" xmlns="http://tempuri.org/staffAttendanceSummariesDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="staffAttendanceSummariesDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="staffAttendanceSummariesDataSet" msprop:Generator_UserDSName="staffAttendanceSummariesDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="staffAttendanceSummaries" msprop:Generator_TableClassName="staffAttendanceSummariesDataTable" msprop:Generator_TableVarName="tablestaffAttendanceSummaries" msprop:Generator_RowChangedName="staffAttendanceSummariesRowChanged" msprop:Generator_TablePropName="staffAttendanceSummaries" msprop:Generator_RowDeletingName="staffAttendanceSummariesRowDeleting" msprop:Generator_RowChangingName="staffAttendanceSummariesRowChanging" msprop:Generator_RowEvHandlerName="staffAttendanceSummariesRowChangeEventHandler" msprop:Generator_RowDeletedName="staffAttendanceSummariesRowDeleted" msprop:Generator_RowClassName="staffAttendanceSummariesRow" msprop:Generator_UserTableName="staffAttendanceSummaries" msprop:Generator_RowEvArgName="staffAttendanceSummariesRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="StaffId" msprop:Generator_ColumnVarNameInTable="columnStaffId" msprop:Generator_ColumnPropNameInRow="StaffId" msprop:Generator_ColumnPropNameInTable="StaffIdColumn" msprop:Generator_UserColumnName="StaffId" type="xs:string" minOccurs="0" />
+              <xs:element name="StaffName" msprop:Generator_ColumnVarNameInTable="columnStaffName" msprop:Generator_ColumnPropNameInRow="StaffName" msprop:Generator_ColumnPropNameInTable="StaffNameColumn" msprop:Generator_UserColumnName="StaffName" type="xs:string" minOccurs="0" />
+              <xs:element name="Today_Intime" msprop:Generator_ColumnVarNameInTable="columnToday_Intime" msprop:Generator_ColumnPropNameInRow="Today_Intime" msprop:Generator_ColumnPropNameInTable="Today_IntimeColumn" msprop:Generator_UserColumnName="Today_Intime" type="xs:string" minOccurs="0" />
+              <xs:element name="Today_Outtime" msprop:Generator_ColumnVarNameInTable="columnToday_Outtime" msprop:Generator_ColumnPropNameInRow="Today_Outtime" msprop:Generator_ColumnPropNameInTable="Today_OuttimeColumn" msprop:Generator_UserColumnName="Today_Outtime" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalLates" msprop:Generator_ColumnVarNameInTable="columnTotalLates" msprop:Generator_ColumnPropNameInRow="TotalLates" msprop:Generator_ColumnPropNameInTable="TotalLatesColumn" msprop:Generator_UserColumnName="TotalLates" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalAbsents" msprop:Generator_ColumnVarNameInTable="columnTotalAbsents" msprop:Generator_ColumnPropNameInRow="TotalAbsents" msprop:Generator_ColumnPropNameInTable="TotalAbsentsColumn" msprop:Generator_UserColumnName="TotalAbsents" type="xs:string" minOccurs="0" />
+              <xs:element name="sortorder" msprop:Generator_ColumnVarNameInTable="columnsortorder" msprop:Generator_ColumnPropNameInRow="sortorder" msprop:Generator_ColumnPropNameInTable="sortorderColumn" msprop:Generator_UserColumnName="sortorder" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

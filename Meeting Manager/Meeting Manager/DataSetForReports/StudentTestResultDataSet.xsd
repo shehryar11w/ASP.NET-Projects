@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="StudentTestResultDataSet" targetNamespace="http://tempuri.org/StudentTestResultDataSet.xsd" xmlns:mstns="http://tempuri.org/StudentTestResultDataSet.xsd" xmlns="http://tempuri.org/StudentTestResultDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="StudentTestResultDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="StudentTestResultDataSet" msprop:Generator_UserDSName="StudentTestResultDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TestResult" msprop:Generator_TableClassName="TestResultDataTable" msprop:Generator_TableVarName="tableTestResult" msprop:Generator_RowChangedName="TestResultRowChanged" msprop:Generator_TablePropName="TestResult" msprop:Generator_RowDeletingName="TestResultRowDeleting" msprop:Generator_RowChangingName="TestResultRowChanging" msprop:Generator_RowEvHandlerName="TestResultRowChangeEventHandler" msprop:Generator_RowDeletedName="TestResultRowDeleted" msprop:Generator_RowClassName="TestResultRow" msprop:Generator_UserTableName="TestResult" msprop:Generator_RowEvArgName="TestResultRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Subject" msprop:Generator_ColumnVarNameInTable="columnSubject" msprop:Generator_ColumnPropNameInRow="Subject" msprop:Generator_ColumnPropNameInTable="SubjectColumn" msprop:Generator_UserColumnName="Subject" type="xs:string" minOccurs="0" />
+              <xs:element name="ObtainMarks" msdata:Caption="Subject" msprop:Generator_ColumnVarNameInTable="columnObtainMarks" msprop:Generator_ColumnPropNameInRow="ObtainMarks" msprop:Generator_ColumnPropNameInTable="ObtainMarksColumn" msprop:Generator_UserColumnName="ObtainMarks" type="xs:double" minOccurs="0" />
+              <xs:element name="TotalMarks" msdata:Caption="Subject" msprop:Generator_ColumnVarNameInTable="columnTotalMarks" msprop:Generator_ColumnPropNameInRow="TotalMarks" msprop:Generator_ColumnPropNameInTable="TotalMarksColumn" msprop:Generator_UserColumnName="TotalMarks" type="xs:double" minOccurs="0" />
+              <xs:element name="Percentage" msdata:Caption="Subject" msprop:Generator_ColumnVarNameInTable="columnPercentage" msprop:Generator_ColumnPropNameInRow="Percentage" msprop:Generator_ColumnPropNameInTable="PercentageColumn" msprop:Generator_UserColumnName="Percentage" type="xs:double" minOccurs="0" />
+              <xs:element name="Grade" msprop:Generator_ColumnVarNameInTable="columnGrade" msprop:Generator_ColumnPropNameInRow="Grade" msprop:Generator_ColumnPropNameInTable="GradeColumn" msprop:Generator_UserColumnName="Grade" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Remarks" msprop:Generator_TableClassName="RemarksDataTable" msprop:Generator_TableVarName="tableRemarks" msprop:Generator_TablePropName="Remarks" msprop:Generator_RowDeletingName="RemarksRowDeleting" msprop:Generator_RowChangingName="RemarksRowChanging" msprop:Generator_RowEvHandlerName="RemarksRowChangeEventHandler" msprop:Generator_RowDeletedName="RemarksRowDeleted" msprop:Generator_UserTableName="Remarks" msprop:Generator_RowChangedName="RemarksRowChanged" msprop:Generator_RowEvArgName="RemarksRowChangeEvent" msprop:Generator_RowClassName="RemarksRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Remarks" msdata:Caption="Subject" msprop:Generator_ColumnVarNameInTable="columnRemarks" msprop:Generator_ColumnPropNameInRow="Remarks" msprop:Generator_ColumnPropNameInTable="RemarksColumn" msprop:Generator_UserColumnName="Remarks" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReportCardElementry" targetNamespace="http://tempuri.org/ReportCardElementry.xsd" xmlns:mstns="http://tempuri.org/ReportCardElementry.xsd" xmlns="http://tempuri.org/ReportCardElementry.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ReportCardElementry" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ReportCardElementry" msprop:Generator_UserDSName="ReportCardElementry">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ReportCardElementry" msprop:Generator_TableClassName="ReportCardElementryDataTable" msprop:Generator_TableVarName="tableReportCardElementry" msprop:Generator_TablePropName="_ReportCardElementry" msprop:Generator_RowDeletingName="ReportCardElementryRowDeleting" msprop:Generator_RowChangingName="ReportCardElementryRowChanging" msprop:Generator_RowEvHandlerName="ReportCardElementryRowChangeEventHandler" msprop:Generator_RowDeletedName="ReportCardElementryRowDeleted" msprop:Generator_UserTableName="ReportCardElementry" msprop:Generator_RowChangedName="ReportCardElementryRowChanged" msprop:Generator_RowEvArgName="ReportCardElementryRowChangeEvent" msprop:Generator_RowClassName="ReportCardElementryRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="StudentId" msprop:Generator_ColumnVarNameInTable="columnStudentId" msprop:Generator_ColumnPropNameInRow="StudentId" msprop:Generator_ColumnPropNameInTable="StudentIdColumn" msprop:Generator_UserColumnName="StudentId" type="xs:string" minOccurs="0" />
+              <xs:element name="SubjectId" msprop:Generator_ColumnVarNameInTable="columnSubjectId" msprop:Generator_ColumnPropNameInRow="SubjectId" msprop:Generator_ColumnPropNameInTable="SubjectIdColumn" msprop:Generator_UserColumnName="SubjectId" type="xs:string" minOccurs="0" />
+              <xs:element name="Subject" msprop:Generator_ColumnVarNameInTable="columnSubject" msprop:Generator_ColumnPropNameInRow="Subject" msprop:Generator_ColumnPropNameInTable="SubjectColumn" msprop:Generator_UserColumnName="Subject" type="xs:string" minOccurs="0" />
+              <xs:element name="Tests" msprop:Generator_ColumnVarNameInTable="columnTests" msprop:Generator_ColumnPropNameInRow="Tests" msprop:Generator_ColumnPropNameInTable="TestsColumn" msprop:Generator_UserColumnName="Tests" type="xs:string" minOccurs="0" />
+              <xs:element name="Exams" msprop:Generator_ColumnVarNameInTable="columnExams" msprop:Generator_ColumnPropNameInRow="Exams" msprop:Generator_ColumnPropNameInTable="ExamsColumn" msprop:Generator_UserColumnName="Exams" type="xs:string" minOccurs="0" />
+              <xs:element name="ObTotal" msprop:Generator_ColumnVarNameInTable="columnObTotal" msprop:Generator_ColumnPropNameInRow="ObTotal" msprop:Generator_ColumnPropNameInTable="ObTotalColumn" msprop:Generator_UserColumnName="ObTotal" type="xs:string" minOccurs="0" />
+              <xs:element name="Ttotal" msprop:Generator_ColumnVarNameInTable="columnTtotal" msprop:Generator_ColumnPropNameInRow="Ttotal" msprop:Generator_ColumnPropNameInTable="TtotalColumn" msprop:Generator_UserColumnName="Ttotal" type="xs:string" minOccurs="0" />
+              <xs:element name="Per" msprop:Generator_ColumnVarNameInTable="columnPer" msprop:Generator_ColumnPropNameInRow="Per" msprop:Generator_ColumnPropNameInTable="PerColumn" msprop:Generator_UserColumnName="Per" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

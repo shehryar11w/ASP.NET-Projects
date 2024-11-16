@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SubjectComponentDataSet" targetNamespace="http://tempuri.org/SubjectComponentDataSet.xsd" xmlns:mstns="http://tempuri.org/SubjectComponentDataSet.xsd" xmlns="http://tempuri.org/SubjectComponentDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SubjectComponentDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="SubjectComponentDataSet" msprop:Generator_UserDSName="SubjectComponentDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SubjectComponent" msprop:Generator_TableClassName="SubjectComponentDataTable" msprop:Generator_TableVarName="tableSubjectComponent" msprop:Generator_TablePropName="SubjectComponent" msprop:Generator_RowDeletingName="SubjectComponentRowDeleting" msprop:Generator_RowChangingName="SubjectComponentRowChanging" msprop:Generator_RowEvHandlerName="SubjectComponentRowChangeEventHandler" msprop:Generator_RowDeletedName="SubjectComponentRowDeleted" msprop:Generator_UserTableName="SubjectComponent" msprop:Generator_RowChangedName="SubjectComponentRowChanged" msprop:Generator_RowEvArgName="SubjectComponentRowChangeEvent" msprop:Generator_RowClassName="SubjectComponentRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Heading" msdata:Caption="Text" msprop:Generator_ColumnVarNameInTable="columnHeading" msprop:Generator_ColumnPropNameInRow="Heading" msprop:Generator_ColumnPropNameInTable="HeadingColumn" msprop:Generator_UserColumnName="Heading" type="xs:string" minOccurs="0" />
+              <xs:element name="OptionStage" msdata:Caption="Option" msprop:Generator_ColumnVarNameInTable="columnOptionStage" msprop:Generator_ColumnPropNameInRow="OptionStage" msprop:Generator_ColumnPropNameInTable="OptionStageColumn" msprop:Generator_UserColumnName="OptionStage" type="xs:string" minOccurs="0" />
+              <xs:element name="Option" msprop:Generator_ColumnVarNameInTable="columnOption" msprop:Generator_ColumnPropNameInRow="Option" msprop:Generator_ColumnPropNameInTable="OptionColumn" msprop:Generator_UserColumnName="Option" type="xs:string" minOccurs="0" />
+              <xs:element name="FinalChecked" msdata:Caption="Checked" msprop:Generator_ColumnVarNameInTable="columnFinalChecked" msprop:Generator_ColumnPropNameInRow="FinalChecked" msprop:Generator_ColumnPropNameInTable="FinalCheckedColumn" msprop:Generator_UserColumnName="FinalChecked" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="Checked" msprop:Generator_ColumnVarNameInTable="columnChecked" msprop:Generator_ColumnPropNameInRow="Checked" msprop:Generator_ColumnPropNameInTable="CheckedColumn" msprop:Generator_UserColumnName="Checked" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="FinalExamScoringLegend" msdata:Caption="scoringLegend" msprop:Generator_ColumnVarNameInTable="columnFinalExamScoringLegend" msprop:Generator_ColumnPropNameInRow="FinalExamScoringLegend" msprop:Generator_ColumnPropNameInTable="FinalExamScoringLegendColumn" msprop:Generator_UserColumnName="FinalExamScoringLegend" type="xs:int" minOccurs="0" />
+              <xs:element name="scoringLegend" msprop:Generator_ColumnVarNameInTable="columnscoringLegend" msprop:Generator_ColumnPropNameInRow="scoringLegend" msprop:Generator_ColumnPropNameInTable="scoringLegendColumn" msprop:Generator_UserColumnName="scoringLegend" type="xs:int" minOccurs="0" />
+              <xs:element name="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

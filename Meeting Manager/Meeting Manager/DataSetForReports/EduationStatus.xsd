@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="EduationStatus" targetNamespace="http://tempuri.org/EduationStatus.xsd" xmlns:mstns="http://tempuri.org/EduationStatus.xsd" xmlns="http://tempuri.org/EduationStatus.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="EduationStatus" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="EduationStatus" msprop:Generator_UserDSName="EduationStatus">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="EduationStatus" msprop:Generator_TableClassName="EduationStatusDataTable" msprop:Generator_TableVarName="tableEduationStatus" msprop:Generator_TablePropName="_EduationStatus" msprop:Generator_RowDeletingName="EduationStatusRowDeleting" msprop:Generator_RowChangingName="EduationStatusRowChanging" msprop:Generator_RowEvHandlerName="EduationStatusRowChangeEventHandler" msprop:Generator_RowDeletedName="EduationStatusRowDeleted" msprop:Generator_UserTableName="EduationStatus" msprop:Generator_RowChangedName="EduationStatusRowChanged" msprop:Generator_RowEvArgName="EduationStatusRowChangeEvent" msprop:Generator_RowClassName="EduationStatusRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:string" minOccurs="0" />
+              <xs:element name="Title" msprop:Generator_ColumnVarNameInTable="columnTitle" msprop:Generator_ColumnPropNameInRow="Title" msprop:Generator_ColumnPropNameInTable="TitleColumn" msprop:Generator_UserColumnName="Title" type="xs:string" minOccurs="0" />
+              <xs:element name="InstituteName" msprop:Generator_ColumnVarNameInTable="columnInstituteName" msprop:Generator_ColumnPropNameInRow="InstituteName" msprop:Generator_ColumnPropNameInTable="InstituteNameColumn" msprop:Generator_UserColumnName="InstituteName" type="xs:string" minOccurs="0" />
+              <xs:element name="YearOfPassing" msprop:Generator_ColumnVarNameInTable="columnYearOfPassing" msprop:Generator_ColumnPropNameInRow="YearOfPassing" msprop:Generator_ColumnPropNameInTable="YearOfPassingColumn" msprop:Generator_UserColumnName="YearOfPassing" type="xs:string" minOccurs="0" />
+              <xs:element name="JobApplicationFormId" msprop:Generator_ColumnVarNameInTable="columnJobApplicationFormId" msprop:Generator_ColumnPropNameInRow="JobApplicationFormId" msprop:Generator_ColumnPropNameInTable="JobApplicationFormIdColumn" msprop:Generator_UserColumnName="JobApplicationFormId" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="_x0035_to8FinalReportCardDataSet" targetNamespace="http://tempuri.org/5to8FinalReportCardDataSet.xsd" xmlns:mstns="http://tempuri.org/5to8FinalReportCardDataSet.xsd" xmlns="http://tempuri.org/5to8FinalReportCardDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="_x0035_to8FinalReportCardDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="_5to8FinalReportCardDataSet" msprop:Generator_UserDSName="5to8FinalReportCardDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="_x0035_to8FinalReportCard" msprop:Generator_TableClassName="_5to8FinalReportCardDataTable" msprop:Generator_TableVarName="table5to8FinalReportCard" msprop:Generator_TablePropName="_5to8FinalReportCard" msprop:Generator_RowDeletingName="_5to8FinalReportCardRowDeleting" msprop:Generator_RowChangingName="_5to8FinalReportCardRowChanging" msprop:Generator_RowEvHandlerName="_5to8FinalReportCardRowChangeEventHandler" msprop:Generator_RowDeletedName="_5to8FinalReportCardRowDeleted" msprop:Generator_UserTableName="5to8FinalReportCard" msprop:Generator_RowChangedName="_5to8FinalReportCardRowChanged" msprop:Generator_RowEvArgName="_5to8FinalReportCardRowChangeEvent" msprop:Generator_RowClassName="_5to8FinalReportCardRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Subject" msprop:Generator_ColumnVarNameInTable="columnSubject" msprop:Generator_ColumnPropNameInRow="Subject" msprop:Generator_ColumnPropNameInTable="SubjectColumn" msprop:Generator_UserColumnName="Subject" type="xs:string" minOccurs="0" />
+              <xs:element name="CampusId" msdata:Caption="Subject" msprop:Generator_ColumnVarNameInTable="columnCampusId" msprop:Generator_ColumnPropNameInRow="CampusId" msprop:Generator_ColumnPropNameInTable="CampusIdColumn" msprop:Generator_UserColumnName="CampusId" type="xs:int" minOccurs="0" />
+              <xs:element name="FirstTermMarks" msdata:Caption="Subject" msprop:Generator_ColumnVarNameInTable="columnFirstTermMarks" msprop:Generator_ColumnPropNameInRow="FirstTermMarks" msprop:Generator_ColumnPropNameInTable="FirstTermMarksColumn" msprop:Generator_UserColumnName="FirstTermMarks" type="xs:string" minOccurs="0" />
+              <xs:element name="MidTermMarks" msdata:Caption="Subject" msprop:Generator_ColumnVarNameInTable="columnMidTermMarks" msprop:Generator_ColumnPropNameInRow="MidTermMarks" msprop:Generator_ColumnPropNameInTable="MidTermMarksColumn" msprop:Generator_UserColumnName="MidTermMarks" type="xs:string" minOccurs="0" />
+              <xs:element name="SecondTermMarks" msdata:Caption="Subject" msprop:Generator_ColumnVarNameInTable="columnSecondTermMarks" msprop:Generator_ColumnPropNameInRow="SecondTermMarks" msprop:Generator_ColumnPropNameInTable="SecondTermMarksColumn" msprop:Generator_UserColumnName="SecondTermMarks" type="xs:string" minOccurs="0" />
+              <xs:element name="FinalExamMarks" msdata:Caption="Subject" msprop:Generator_ColumnVarNameInTable="columnFinalExamMarks" msprop:Generator_ColumnPropNameInRow="FinalExamMarks" msprop:Generator_ColumnPropNameInTable="FinalExamMarksColumn" msprop:Generator_UserColumnName="FinalExamMarks" type="xs:string" minOccurs="0" />
+              <xs:element name="FirstTermPercentileGrade" msdata:Caption="Subject" msprop:Generator_ColumnVarNameInTable="columnFirstTermPercentileGrade" msprop:Generator_ColumnPropNameInRow="FirstTermPercentileGrade" msprop:Generator_ColumnPropNameInTable="FirstTermPercentileGradeColumn" msprop:Generator_UserColumnName="FirstTermPercentileGrade" type="xs:string" minOccurs="0" />
+              <xs:element name="FirstTermPercentile" msdata:Caption="Subject" msprop:Generator_ColumnVarNameInTable="columnFirstTermPercentile" msprop:Generator_ColumnPropNameInRow="FirstTermPercentile" msprop:Generator_ColumnPropNameInTable="FirstTermPercentileColumn" msprop:Generator_UserColumnName="FirstTermPercentile" type="xs:string" minOccurs="0" />
+              <xs:element name="FirstTermPercentage" msdata:Caption="Subject" msprop:Generator_ColumnVarNameInTable="columnFirstTermPercentage" msprop:Generator_ColumnPropNameInRow="FirstTermPercentage" msprop:Generator_ColumnPropNameInTable="FirstTermPercentageColumn" msprop:Generator_UserColumnName="FirstTermPercentage" type="xs:string" minOccurs="0" />
+              <xs:element name="SecondTermPercentileGrade" msdata:Caption="Subject" msprop:Generator_ColumnVarNameInTable="columnSecondTermPercentileGrade" msprop:Generator_ColumnPropNameInRow="SecondTermPercentileGrade" msprop:Generator_ColumnPropNameInTable="SecondTermPercentileGradeColumn" msprop:Generator_UserColumnName="SecondTermPercentileGrade" type="xs:string" minOccurs="0" />
+              <xs:element name="SecondTermPercentile" msdata:Caption="Subject" msprop:Generator_ColumnVarNameInTable="columnSecondTermPercentile" msprop:Generator_ColumnPropNameInRow="SecondTermPercentile" msprop:Generator_ColumnPropNameInTable="SecondTermPercentileColumn" msprop:Generator_UserColumnName="SecondTermPercentile" type="xs:string" minOccurs="0" />
+              <xs:element name="SecondTermPercentage" msdata:Caption="Subject" msprop:Generator_ColumnVarNameInTable="columnSecondTermPercentage" msprop:Generator_ColumnPropNameInRow="SecondTermPercentage" msprop:Generator_ColumnPropNameInTable="SecondTermPercentageColumn" msprop:Generator_UserColumnName="SecondTermPercentage" type="xs:string" minOccurs="0" />
+              <xs:element name="FirstTermGrade" msdata:Caption="Subject" msprop:Generator_ColumnVarNameInTable="columnFirstTermGrade" msprop:Generator_ColumnPropNameInRow="FirstTermGrade" msprop:Generator_ColumnPropNameInTable="FirstTermGradeColumn" msprop:Generator_UserColumnName="FirstTermGrade" type="xs:string" minOccurs="0" />
+              <xs:element name="SecondTermGrade" msdata:Caption="Subject" msprop:Generator_ColumnVarNameInTable="columnSecondTermGrade" msprop:Generator_ColumnPropNameInRow="SecondTermGrade" msprop:Generator_ColumnPropNameInTable="SecondTermGradeColumn" msprop:Generator_UserColumnName="SecondTermGrade" type="xs:string" minOccurs="0" />
+              <xs:element name="OverAllPercentile" msdata:Caption="Subject" msprop:Generator_ColumnVarNameInTable="columnOverAllPercentile" msprop:Generator_ColumnPropNameInRow="OverAllPercentile" msprop:Generator_ColumnPropNameInTable="OverAllPercentileColumn" msprop:Generator_UserColumnName="OverAllPercentile" type="xs:string" minOccurs="0" />
+              <xs:element name="OverAllPercentage" msdata:Caption="Subject" msprop:Generator_ColumnVarNameInTable="columnOverAllPercentage" msprop:Generator_ColumnPropNameInRow="OverAllPercentage" msprop:Generator_ColumnPropNameInTable="OverAllPercentageColumn" msprop:Generator_UserColumnName="OverAllPercentage" type="xs:string" minOccurs="0" />
+              <xs:element name="OverAllPercentileGrade" msdata:Caption="OverAllGrade" msprop:Generator_ColumnVarNameInTable="columnOverAllPercentileGrade" msprop:Generator_ColumnPropNameInRow="OverAllPercentileGrade" msprop:Generator_ColumnPropNameInTable="OverAllPercentileGradeColumn" msprop:Generator_UserColumnName="OverAllPercentileGrade" type="xs:string" minOccurs="0" />
+              <xs:element name="OverAllGrade" msprop:Generator_ColumnVarNameInTable="columnOverAllGrade" msprop:Generator_ColumnPropNameInRow="OverAllGrade" msprop:Generator_ColumnPropNameInTable="OverAllGradeColumn" msprop:Generator_UserColumnName="OverAllGrade" type="xs:string" minOccurs="0" />
+              <xs:element name="sortOrder" msprop:Generator_ColumnVarNameInTable="columnsortOrder" msprop:Generator_ColumnPropNameInRow="sortOrder" msprop:Generator_ColumnPropNameInTable="sortOrderColumn" msprop:Generator_UserColumnName="sortOrder" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

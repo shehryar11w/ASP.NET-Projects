@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SubjectPercentileResult" targetNamespace="http://tempuri.org/SubjectPercentileResult.xsd" xmlns:mstns="http://tempuri.org/SubjectPercentileResult.xsd" xmlns="http://tempuri.org/SubjectPercentileResult.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SubjectPercentileResult" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="SubjectPercentileResult" msprop:Generator_UserDSName="SubjectPercentileResult">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SubjectPercentileResult" msprop:Generator_TableClassName="SubjectPercentileResultDataTable" msprop:Generator_TableVarName="tableSubjectPercentileResult" msprop:Generator_TablePropName="_SubjectPercentileResult" msprop:Generator_RowDeletingName="SubjectPercentileResultRowDeleting" msprop:Generator_RowChangingName="SubjectPercentileResultRowChanging" msprop:Generator_RowEvHandlerName="SubjectPercentileResultRowChangeEventHandler" msprop:Generator_RowDeletedName="SubjectPercentileResultRowDeleted" msprop:Generator_UserTableName="SubjectPercentileResult" msprop:Generator_RowChangedName="SubjectPercentileResultRowChanged" msprop:Generator_RowEvArgName="SubjectPercentileResultRowChangeEvent" msprop:Generator_RowClassName="SubjectPercentileResultRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SortOrder" msdata:Caption="Subject" msprop:Generator_ColumnVarNameInTable="columnSortOrder" msprop:Generator_ColumnPropNameInRow="SortOrder" msprop:Generator_ColumnPropNameInTable="SortOrderColumn" msprop:Generator_UserColumnName="SortOrder" type="xs:short" minOccurs="0" />
+              <xs:element name="Grade" msdata:Caption="Subject" msprop:Generator_ColumnVarNameInTable="columnGrade" msprop:Generator_ColumnPropNameInRow="Grade" msprop:Generator_ColumnPropNameInTable="GradeColumn" msprop:Generator_UserColumnName="Grade" type="xs:string" minOccurs="0" />
+              <xs:element name="Percentile" msdata:Caption="Subject" msprop:Generator_ColumnVarNameInTable="columnPercentile" msprop:Generator_ColumnPropNameInRow="Percentile" msprop:Generator_ColumnPropNameInTable="PercentileColumn" msprop:Generator_UserColumnName="Percentile" type="xs:string" minOccurs="0" />
+              <xs:element name="Subject" msprop:Generator_ColumnVarNameInTable="columnSubject" msprop:Generator_ColumnPropNameInRow="Subject" msprop:Generator_ColumnPropNameInTable="SubjectColumn" msprop:Generator_UserColumnName="Subject" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

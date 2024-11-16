@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="candidateEvaluation" targetNamespace="http://tempuri.org/candidateEvaluation.xsd" xmlns:mstns="http://tempuri.org/candidateEvaluation.xsd" xmlns="http://tempuri.org/candidateEvaluation.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="candidateEvaluation" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="candidateEvaluation" msprop:Generator_UserDSName="candidateEvaluation">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="candidateEvaluation" msprop:Generator_TableClassName="candidateEvaluationDataTable" msprop:Generator_TableVarName="tablecandidateEvaluation" msprop:Generator_TablePropName="_candidateEvaluation" msprop:Generator_RowDeletingName="candidateEvaluationRowDeleting" msprop:Generator_RowChangingName="candidateEvaluationRowChanging" msprop:Generator_RowEvHandlerName="candidateEvaluationRowChangeEventHandler" msprop:Generator_RowDeletedName="candidateEvaluationRowDeleted" msprop:Generator_UserTableName="candidateEvaluation" msprop:Generator_RowChangedName="candidateEvaluationRowChanged" msprop:Generator_RowEvArgName="candidateEvaluationRowChangeEvent" msprop:Generator_RowClassName="candidateEvaluationRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="InterviewScheduleId" msprop:Generator_ColumnVarNameInTable="columnInterviewScheduleId" msprop:Generator_ColumnPropNameInRow="InterviewScheduleId" msprop:Generator_ColumnPropNameInTable="InterviewScheduleIdColumn" msprop:Generator_UserColumnName="InterviewScheduleId" type="xs:string" minOccurs="0" />
+              <xs:element name="Date" msprop:Generator_ColumnVarNameInTable="columnDate" msprop:Generator_ColumnPropNameInRow="Date" msprop:Generator_ColumnPropNameInTable="DateColumn" msprop:Generator_UserColumnName="Date" type="xs:string" minOccurs="0" />
+              <xs:element name="CandidateName" msprop:Generator_ColumnVarNameInTable="columnCandidateName" msprop:Generator_ColumnPropNameInRow="CandidateName" msprop:Generator_ColumnPropNameInTable="CandidateNameColumn" msprop:Generator_UserColumnName="CandidateName" type="xs:string" minOccurs="0" />
+              <xs:element name="InterviewConductorName" msprop:Generator_ColumnVarNameInTable="columnInterviewConductorName" msprop:Generator_ColumnPropNameInRow="InterviewConductorName" msprop:Generator_ColumnPropNameInTable="InterviewConductorNameColumn" msprop:Generator_UserColumnName="InterviewConductorName" type="xs:string" minOccurs="0" />
+              <xs:element name="PositionFor" msprop:Generator_ColumnVarNameInTable="columnPositionFor" msprop:Generator_ColumnPropNameInRow="PositionFor" msprop:Generator_ColumnPropNameInTable="PositionForColumn" msprop:Generator_UserColumnName="PositionFor" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

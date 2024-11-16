@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="GateAttendancesDataSet" targetNamespace="http://tempuri.org/GateAttendancesDataSet.xsd" xmlns:mstns="http://tempuri.org/GateAttendancesDataSet.xsd" xmlns="http://tempuri.org/GateAttendancesDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="GateAttendancesDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="GateAttendancesDataSet" msprop:Generator_UserDSName="GateAttendancesDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="GateAttendances" msprop:Generator_TableClassName="GateAttendancesDataTable" msprop:Generator_TableVarName="tableGateAttendances" msprop:Generator_TablePropName="GateAttendances" msprop:Generator_RowDeletingName="GateAttendancesRowDeleting" msprop:Generator_RowChangingName="GateAttendancesRowChanging" msprop:Generator_RowEvHandlerName="GateAttendancesRowChangeEventHandler" msprop:Generator_RowDeletedName="GateAttendancesRowDeleted" msprop:Generator_UserTableName="GateAttendances" msprop:Generator_RowChangedName="GateAttendancesRowChanged" msprop:Generator_RowEvArgName="GateAttendancesRowChangeEvent" msprop:Generator_RowClassName="GateAttendancesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TotalPresents" msprop:Generator_ColumnVarNameInTable="columnTotalPresents" msprop:Generator_ColumnPropNameInRow="TotalPresents" msprop:Generator_ColumnPropNameInTable="TotalPresentsColumn" msprop:Generator_UserColumnName="TotalPresents" type="xs:int" minOccurs="0" />
+              <xs:element name="TotalAbsents" msprop:Generator_ColumnVarNameInTable="columnTotalAbsents" msprop:Generator_ColumnPropNameInRow="TotalAbsents" msprop:Generator_ColumnPropNameInTable="TotalAbsentsColumn" msprop:Generator_UserColumnName="TotalAbsents" type="xs:int" minOccurs="0" />
+              <xs:element name="ATTotalPresents" msprop:Generator_ColumnVarNameInTable="columnATTotalPresents" msprop:Generator_ColumnPropNameInRow="ATTotalPresents" msprop:Generator_ColumnPropNameInTable="ATTotalPresentsColumn" msprop:Generator_UserColumnName="ATTotalPresents" type="xs:string" minOccurs="0" />
+              <xs:element name="ATTotalAbsents" msprop:Generator_ColumnVarNameInTable="columnATTotalAbsents" msprop:Generator_ColumnPropNameInRow="ATTotalAbsents" msprop:Generator_ColumnPropNameInTable="ATTotalAbsentsColumn" msprop:Generator_UserColumnName="ATTotalAbsents" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

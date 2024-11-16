@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="MarkSheetDataSet" targetNamespace="http://tempuri.org/MarkSheetDataSet.xsd" xmlns:mstns="http://tempuri.org/MarkSheetDataSet.xsd" xmlns="http://tempuri.org/MarkSheetDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="MarkSheetDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="MarkSheetDataSet" msprop:Generator_UserDSName="MarkSheetDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Marsheet" msprop:Generator_TableClassName="MarsheetDataTable" msprop:Generator_TableVarName="tableMarsheet" msprop:Generator_TablePropName="Marsheet" msprop:Generator_RowDeletingName="MarsheetRowDeleting" msprop:Generator_RowChangingName="MarsheetRowChanging" msprop:Generator_RowEvHandlerName="MarsheetRowChangeEventHandler" msprop:Generator_RowDeletedName="MarsheetRowDeleted" msprop:Generator_UserTableName="Marsheet" msprop:Generator_RowChangedName="MarsheetRowChanged" msprop:Generator_RowEvArgName="MarsheetRowChangeEvent" msprop:Generator_RowClassName="MarsheetRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Subject" msprop:Generator_ColumnVarNameInTable="columnSubject" msprop:Generator_ColumnPropNameInRow="Subject" msprop:Generator_ColumnPropNameInTable="SubjectColumn" msprop:Generator_UserColumnName="Subject" type="xs:string" minOccurs="0" />
+              <xs:element name="ObtainMarks" msprop:Generator_ColumnVarNameInTable="columnObtainMarks" msprop:Generator_ColumnPropNameInRow="ObtainMarks" msprop:Generator_ColumnPropNameInTable="ObtainMarksColumn" msprop:Generator_UserColumnName="ObtainMarks" type="xs:double" minOccurs="0" />
+              <xs:element name="TotalMarks" msprop:Generator_ColumnVarNameInTable="columnTotalMarks" msprop:Generator_ColumnPropNameInRow="TotalMarks" msprop:Generator_ColumnPropNameInTable="TotalMarksColumn" msprop:Generator_UserColumnName="TotalMarks" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

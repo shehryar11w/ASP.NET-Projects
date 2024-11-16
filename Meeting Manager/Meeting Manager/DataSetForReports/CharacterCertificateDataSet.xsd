@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="CharacterCertificateDataSet" targetNamespace="http://tempuri.org/CharacterCertificateDataSet.xsd" xmlns:mstns="http://tempuri.org/CharacterCertificateDataSet.xsd" xmlns="http://tempuri.org/CharacterCertificateDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="CharacterCertificateDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="CharacterCertificateDataSet" msprop:Generator_UserDSName="CharacterCertificateDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CharacterCertificate" msprop:Generator_TableClassName="CharacterCertificateDataTable" msprop:Generator_TableVarName="tableCharacterCertificate" msprop:Generator_RowChangedName="CharacterCertificateRowChanged" msprop:Generator_TablePropName="CharacterCertificate" msprop:Generator_RowDeletingName="CharacterCertificateRowDeleting" msprop:Generator_RowChangingName="CharacterCertificateRowChanging" msprop:Generator_RowEvHandlerName="CharacterCertificateRowChangeEventHandler" msprop:Generator_RowDeletedName="CharacterCertificateRowDeleted" msprop:Generator_RowClassName="CharacterCertificateRow" msprop:Generator_UserTableName="CharacterCertificate" msprop:Generator_RowEvArgName="CharacterCertificateRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="StudentName" msprop:Generator_ColumnVarNameInTable="columnStudentName" msprop:Generator_ColumnPropNameInRow="StudentName" msprop:Generator_ColumnPropNameInTable="StudentNameColumn" msprop:Generator_UserColumnName="StudentName" type="xs:string" minOccurs="0" />
+              <xs:element name="FatherName" msprop:Generator_ColumnVarNameInTable="columnFatherName" msprop:Generator_ColumnPropNameInRow="FatherName" msprop:Generator_ColumnPropNameInTable="FatherNameColumn" msprop:Generator_UserColumnName="FatherName" type="xs:string" minOccurs="0" />
+              <xs:element name="AdmissionNo" msprop:Generator_ColumnVarNameInTable="columnAdmissionNo" msprop:Generator_ColumnPropNameInRow="AdmissionNo" msprop:Generator_ColumnPropNameInTable="AdmissionNoColumn" msprop:Generator_UserColumnName="AdmissionNo" type="xs:string" minOccurs="0" />
+              <xs:element name="BoardRegNo" msprop:Generator_ColumnVarNameInTable="columnBoardRegNo" msprop:Generator_ColumnPropNameInRow="BoardRegNo" msprop:Generator_ColumnPropNameInTable="BoardRegNoColumn" msprop:Generator_UserColumnName="BoardRegNo" type="xs:string" minOccurs="0" />
+              <xs:element name="DOBWord" msprop:Generator_ColumnVarNameInTable="columnDOBWord" msprop:Generator_ColumnPropNameInRow="DOBWord" msprop:Generator_ColumnPropNameInTable="DOBWordColumn" msprop:Generator_UserColumnName="DOBWord" type="xs:string" minOccurs="0" />
+              <xs:element name="DOB" msprop:Generator_ColumnVarNameInTable="columnDOB" msprop:Generator_ColumnPropNameInRow="DOB" msprop:Generator_ColumnPropNameInTable="DOBColumn" msprop:Generator_UserColumnName="DOB" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="AcdemicYear" msprop:Generator_ColumnVarNameInTable="columnAcdemicYear" msprop:Generator_ColumnPropNameInRow="AcdemicYear" msprop:Generator_ColumnPropNameInTable="AcdemicYearColumn" msprop:Generator_UserColumnName="AcdemicYear" type="xs:string" minOccurs="0" />
+              <xs:element name="Date" msprop:Generator_ColumnVarNameInTable="columnDate" msprop:Generator_ColumnPropNameInRow="Date" msprop:Generator_ColumnPropNameInTable="DateColumn" msprop:Generator_UserColumnName="Date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="SchoolName" msprop:Generator_ColumnVarNameInTable="columnSchoolName" msprop:Generator_ColumnPropNameInRow="SchoolName" msprop:Generator_ColumnPropNameInTable="SchoolNameColumn" msprop:Generator_UserColumnName="SchoolName" type="xs:string" minOccurs="0" />
+              <xs:element name="ReportLogo" msprop:Generator_ColumnVarNameInTable="columnReportLogo" msprop:Generator_ColumnPropNameInRow="ReportLogo" msprop:Generator_ColumnPropNameInTable="ReportLogoColumn" msprop:Generator_UserColumnName="ReportLogo" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

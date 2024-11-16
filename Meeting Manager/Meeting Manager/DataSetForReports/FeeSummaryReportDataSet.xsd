@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="FeeSummaryReportDataSet" targetNamespace="http://tempuri.org/FeeSummaryReportDataSet.xsd" xmlns:mstns="http://tempuri.org/FeeSummaryReportDataSet.xsd" xmlns="http://tempuri.org/FeeSummaryReportDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="FeeSummaryReportDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="FeeSummaryReportDataSet" msprop:Generator_UserDSName="FeeSummaryReportDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="FeeSummaryReport" msprop:Generator_TableClassName="FeeSummaryReportDataTable" msprop:Generator_TableVarName="tableFeeSummaryReport" msprop:Generator_RowChangedName="FeeSummaryReportRowChanged" msprop:Generator_TablePropName="FeeSummaryReport" msprop:Generator_RowDeletingName="FeeSummaryReportRowDeleting" msprop:Generator_RowChangingName="FeeSummaryReportRowChanging" msprop:Generator_RowEvHandlerName="FeeSummaryReportRowChangeEventHandler" msprop:Generator_RowDeletedName="FeeSummaryReportRowDeleted" msprop:Generator_RowClassName="FeeSummaryReportRow" msprop:Generator_UserTableName="FeeSummaryReport" msprop:Generator_RowEvArgName="FeeSummaryReportRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="GradeId" msprop:Generator_ColumnVarNameInTable="columnGradeId" msprop:Generator_ColumnPropNameInRow="GradeId" msprop:Generator_ColumnPropNameInTable="GradeIdColumn" msprop:Generator_UserColumnName="GradeId" type="xs:string" minOccurs="0" />
+              <xs:element name="Class" msprop:Generator_ColumnVarNameInTable="columnClass" msprop:Generator_ColumnPropNameInRow="Class" msprop:Generator_ColumnPropNameInTable="ClassColumn" msprop:Generator_UserColumnName="Class" type="xs:string" minOccurs="0" />
+              <xs:element name="Fee" msprop:Generator_ColumnVarNameInTable="columnFee" msprop:Generator_ColumnPropNameInRow="Fee" msprop:Generator_ColumnPropNameInTable="FeeColumn" msprop:Generator_UserColumnName="Fee" type="xs:double" minOccurs="0" />
+              <xs:element name="FeeCollected" msprop:Generator_ColumnVarNameInTable="columnFeeCollected" msprop:Generator_ColumnPropNameInRow="FeeCollected" msprop:Generator_ColumnPropNameInTable="FeeCollectedColumn" msprop:Generator_UserColumnName="FeeCollected" type="xs:double" minOccurs="0" />
+              <xs:element name="FeeDue" msprop:Generator_ColumnVarNameInTable="columnFeeDue" msprop:Generator_ColumnPropNameInRow="FeeDue" msprop:Generator_ColumnPropNameInTable="FeeDueColumn" msprop:Generator_UserColumnName="FeeDue" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SchoolData" msprop:Generator_TableClassName="SchoolDataDataTable" msprop:Generator_TableVarName="tableSchoolData" msprop:Generator_RowChangedName="SchoolDataRowChanged" msprop:Generator_TablePropName="SchoolData" msprop:Generator_RowDeletingName="SchoolDataRowDeleting" msprop:Generator_RowChangingName="SchoolDataRowChanging" msprop:Generator_RowEvHandlerName="SchoolDataRowChangeEventHandler" msprop:Generator_RowDeletedName="SchoolDataRowDeleted" msprop:Generator_RowClassName="SchoolDataRow" msprop:Generator_UserTableName="SchoolData" msprop:Generator_RowEvArgName="SchoolDataRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SchoolImg" msprop:Generator_ColumnVarNameInTable="columnSchoolImg" msprop:Generator_ColumnPropNameInRow="SchoolImg" msprop:Generator_ColumnPropNameInTable="SchoolImgColumn" msprop:Generator_UserColumnName="SchoolImg" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="SchoolName" msprop:Generator_ColumnVarNameInTable="columnSchoolName" msprop:Generator_ColumnPropNameInRow="SchoolName" msprop:Generator_ColumnPropNameInTable="SchoolNameColumn" msprop:Generator_UserColumnName="SchoolName" type="xs:string" minOccurs="0" />
+              <xs:element name="SchoolPhoneNo" msprop:Generator_ColumnVarNameInTable="columnSchoolPhoneNo" msprop:Generator_ColumnPropNameInRow="SchoolPhoneNo" msprop:Generator_ColumnPropNameInTable="SchoolPhoneNoColumn" msprop:Generator_UserColumnName="SchoolPhoneNo" type="xs:string" minOccurs="0" />
+              <xs:element name="Address" msprop:Generator_ColumnVarNameInTable="columnAddress" msprop:Generator_ColumnPropNameInRow="Address" msprop:Generator_ColumnPropNameInTable="AddressColumn" msprop:Generator_UserColumnName="Address" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

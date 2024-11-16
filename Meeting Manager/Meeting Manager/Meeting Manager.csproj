@@ -1,0 +1,854 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>aspnet-Meeting_Manager-c3c6c972-7a14-4b67-9171-aa113474f7c3</UserSecretsId>
+    <RootNamespace>Meeting_Manager</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="8.0.6" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.6" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="8.0.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.6" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="DataSetForReports\5to8FinalReportCardDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>5to8FinalReportCardDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\AccountsLedgerDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AccountsLedgerDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\AlphaFeeVoucherDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AlphaFeeVoucherDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\AlphaTripDetailsDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AlphaTripDetailsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\ATAttendanceDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ATAttendanceDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\BooksBarcodeDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>BooksBarcodeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\BooksReportDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>BooksReportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\CampusAttendanceSummaryDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>CampusAttendanceSummaryDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\candidateEvaluation.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>candidateEvaluation.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\CharacterCertificateDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>CharacterCertificateDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\ChartOfAccountDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ChartOfAccountDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\ClassStudentReportDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ClassStudentReportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\Comments.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Comments.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\ComponentStageDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ComponentStageDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\EduationStatus.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>EduationStatus.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\EvaluationFormDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>EvaluationFormDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\EvaluationFormGradingKeyDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>EvaluationFormGradingKeyDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\FeeDetailReportDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>FeeDetailReportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\FeeOverDueDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>FeeOverDueDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\FeePendingReportDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>FeePendingReportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\FeeSummaryReportDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>FeeSummaryReportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\FeeVoucher.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>FeeVoucher.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\FixedAssetGoodsIssueNoteDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>FixedAssetGoodsIssueNoteDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\GateAttendancesDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GateAttendancesDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\GoodsReceivedNoteDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GoodsReceivedNoteDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\GradeDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GradeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\GroupAttendanceDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GroupAttendanceDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\GroupAttendances.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GroupAttendances.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\GroupAttendancesDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GroupAttendancesDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\GroupTestDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GroupTestDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\JobApplication.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>JobApplication.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\JournalVoucherDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>JournalVoucherDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\LeavingCertificateDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>LeavingCertificateDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\LeftStudentsReportDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>LeftStudentsReportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\MarkSheetDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>MarkSheetDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\MatrixReportDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>MatrixReportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\MockExam.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>MockExam.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\MonthlyAttendanceReportDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>MonthlyAttendanceReportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\MultiplePunchSummaryDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>MultiplePunchSummaryDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\OLevelGradesDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>OLevelGradesDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\OverAllResultDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>OverAllResultDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\PaymentVoucherDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>PaymentVoucherDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\PayrollListDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>PayrollListDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\PaySlipDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>PaySlipDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\Points.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Points.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\PurchaseOrderDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>PurchaseOrderDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\PurchaseQuotationDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>PurchaseQuotationDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\PurchaseRequistionDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>PurchaseRequistionDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\PurchaseReturnDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>PurchaseReturnDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\ReceivingVoucherDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ReceivingVoucherDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\RegisterAttendanceReportDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>RegisterAttendanceReportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\ReportCardDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ReportCardDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\ReportCardElementry.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ReportCardElementry.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\ReportFooter.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ReportFooter.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\ReportHeader.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ReportHeader.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\ReportRemarksDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ReportRemarksDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\RolesRightsDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>RolesRightsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\SchoolInfoDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>SchoolInfoDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\SpecialDiscountReportDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>SpecialDiscountReportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\StaffAttendanceReportDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>StaffAttendanceReportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\staffAttendanceSummariesDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>staffAttendanceSummariesDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\StaffMonthlyAttendanceReportDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>StaffMonthlyAttendanceReportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\StaffPaySlip.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>StaffPaySlip.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\StaffRegisterAttendanceReportDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>StaffRegisterAttendanceReportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\StaffReportDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>StaffReportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\StockLedgerDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>StockLedgerDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\StudentAdmissionDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>StudentAdmissionDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\StudentAttendanceReportDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>StudentAttendanceReportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\StudentColour.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>StudentColour.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\StudentDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>StudentDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\StudentDetailReportDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>StudentDetailReportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\StudentExamReportsDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>StudentExamReportsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\StudentIdCardDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>StudentIdCardDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\StudentInfoDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>StudentInfoDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\StudentMarksSheetReportDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>StudentMarksSheetReportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\StudentMatrixReportDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>StudentMatrixReportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\StudentReportCardInfoDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>StudentReportCardInfoDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\StudentReportDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>StudentReportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\StudentResultsDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>StudentResultsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\StudentSecondaryDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>StudentSecondaryDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\StudentStrengthReportDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>StudentStrengthReportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\StudentTestResultDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>StudentTestResultDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\SubjectComponentDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>SubjectComponentDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\SubjectPercentileResult.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>SubjectPercentileResult.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\SubjectResultsDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>SubjectResultsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\SummaryStudentReportDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>SummaryStudentReportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\TeacherAttendanceReportDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>TeacherAttendanceReportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\TestDatesDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>TestDatesDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\TestNameDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>TestNameDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\TrialBalanceDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>TrialBalanceDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\UnEqualVoucherDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>UnEqualVoucherDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSetForReports\UnPostedVoucherDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>UnPostedVoucherDataSet.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="DataSetForReports\5to8FinalReportCardDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>5to8FinalReportCardDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\AccountsLedgerDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AccountsLedgerDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\AlphaFeeVoucherDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AlphaFeeVoucherDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\AlphaTripDetailsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AlphaTripDetailsDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\ATAttendanceDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ATAttendanceDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\BooksBarcodeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BooksBarcodeDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\BooksReportDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BooksReportDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\CampusAttendanceSummaryDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CampusAttendanceSummaryDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\candidateEvaluation.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>candidateEvaluation.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\CharacterCertificateDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CharacterCertificateDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\ChartOfAccountDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ChartOfAccountDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\ClassStudentReportDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ClassStudentReportDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\Comments.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Comments.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\ComponentStageDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ComponentStageDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\EduationStatus.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EduationStatus.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\EvaluationFormDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EvaluationFormDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\EvaluationFormGradingKeyDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EvaluationFormGradingKeyDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\FeeDetailReportDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FeeDetailReportDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\FeeOverDueDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FeeOverDueDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\FeePendingReportDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FeePendingReportDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\FeeSummaryReportDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FeeSummaryReportDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\FeeVoucher.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FeeVoucher.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\FixedAssetGoodsIssueNoteDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FixedAssetGoodsIssueNoteDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\GateAttendancesDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GateAttendancesDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\GoodsReceivedNoteDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GoodsReceivedNoteDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\GradeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GradeDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\GroupAttendanceDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GroupAttendanceDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\GroupAttendances.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GroupAttendances.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\GroupAttendancesDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GroupAttendancesDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\GroupTestDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GroupTestDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\JobApplication.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>JobApplication.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\JournalVoucherDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>JournalVoucherDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\LeavingCertificateDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LeavingCertificateDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\LeftStudentsReportDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LeftStudentsReportDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\MarkSheetDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MarkSheetDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\MatrixReportDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MatrixReportDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\MockExam.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MockExam.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\MonthlyAttendanceReportDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MonthlyAttendanceReportDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\MultiplePunchSummaryDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MultiplePunchSummaryDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\OLevelGradesDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OLevelGradesDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\OverAllResultDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OverAllResultDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\PaymentVoucherDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PaymentVoucherDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\PayrollListDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PayrollListDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\PaySlipDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PaySlipDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\Points.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Points.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\PurchaseOrderDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PurchaseOrderDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\PurchaseQuotationDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PurchaseQuotationDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\PurchaseRequistionDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PurchaseRequistionDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\PurchaseReturnDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PurchaseReturnDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\ReceivingVoucherDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReceivingVoucherDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\RegisterAttendanceReportDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RegisterAttendanceReportDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\ReportCardDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReportCardDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\ReportCardElementry.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReportCardElementry.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\ReportFooter.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReportFooter.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\ReportHeader.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReportHeader.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\ReportRemarksDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReportRemarksDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\RolesRightsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RolesRightsDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\SchoolInfoDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SchoolInfoDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\SpecialDiscountReportDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SpecialDiscountReportDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\StaffAttendanceReportDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StaffAttendanceReportDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\staffAttendanceSummariesDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>staffAttendanceSummariesDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\StaffMonthlyAttendanceReportDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StaffMonthlyAttendanceReportDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\StaffPaySlip.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StaffPaySlip.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\StaffRegisterAttendanceReportDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StaffRegisterAttendanceReportDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\StaffReportDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StaffReportDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\StockLedgerDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StockLedgerDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\StudentAdmissionDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StudentAdmissionDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\StudentAttendanceReportDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StudentAttendanceReportDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\StudentColour.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StudentColour.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\StudentDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StudentDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\StudentDetailReportDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StudentDetailReportDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\StudentExamReportsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StudentExamReportsDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\StudentIdCardDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StudentIdCardDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\StudentInfoDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StudentInfoDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\StudentMarksSheetReportDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StudentMarksSheetReportDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\StudentMatrixReportDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StudentMatrixReportDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\StudentReportCardInfoDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StudentReportCardInfoDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\StudentReportDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StudentReportDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\StudentResultsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StudentResultsDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\StudentSecondaryDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StudentSecondaryDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\StudentStrengthReportDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StudentStrengthReportDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\StudentTestResultDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StudentTestResultDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\SubjectComponentDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SubjectComponentDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\SubjectPercentileResult.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SubjectPercentileResult.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\SubjectResultsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SubjectResultsDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\SummaryStudentReportDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SummaryStudentReportDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\TeacherAttendanceReportDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TeacherAttendanceReportDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\TestDatesDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TestDatesDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\TestNameDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TestNameDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\TrialBalanceDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TrialBalanceDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\UnEqualVoucherDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UnEqualVoucherDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetForReports\UnPostedVoucherDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UnPostedVoucherDataSet.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>

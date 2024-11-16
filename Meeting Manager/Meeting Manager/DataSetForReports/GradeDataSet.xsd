@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="GradeDataSet" targetNamespace="http://tempuri.org/GradeDataSet.xsd" xmlns:mstns="http://tempuri.org/GradeDataSet.xsd" xmlns="http://tempuri.org/GradeDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="GradeDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="GradeDataSet" msprop:Generator_UserDSName="GradeDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="FinalGrade" msprop:Generator_TableClassName="FinalGradeDataTable" msprop:Generator_TableVarName="tableFinalGrade" msprop:Generator_TablePropName="FinalGrade" msprop:Generator_RowDeletingName="FinalGradeRowDeleting" msprop:Generator_RowChangingName="FinalGradeRowChanging" msprop:Generator_RowEvHandlerName="FinalGradeRowChangeEventHandler" msprop:Generator_RowDeletedName="FinalGradeRowDeleted" msprop:Generator_UserTableName="FinalGrade" msprop:Generator_RowChangedName="FinalGradeRowChanged" msprop:Generator_RowEvArgName="FinalGradeRowChangeEvent" msprop:Generator_RowClassName="FinalGradeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Grade" msprop:Generator_ColumnVarNameInTable="columnGrade" msprop:Generator_ColumnPropNameInRow="Grade" msprop:Generator_ColumnPropNameInTable="GradeColumn" msprop:Generator_UserColumnName="Grade" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

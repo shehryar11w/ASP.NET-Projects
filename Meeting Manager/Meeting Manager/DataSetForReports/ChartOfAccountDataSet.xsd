@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ChartOfAccountDataSet" targetNamespace="http://tempuri.org/ChartOfAccountDataSet.xsd" xmlns:mstns="http://tempuri.org/ChartOfAccountDataSet.xsd" xmlns="http://tempuri.org/ChartOfAccountDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ChartOfAccountDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ChartOfAccountDataSet" msprop:Generator_UserDSName="ChartOfAccountDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ChartOfAccount" msprop:Generator_TableClassName="ChartOfAccountDataTable" msprop:Generator_TableVarName="tableChartOfAccount" msprop:Generator_RowChangedName="ChartOfAccountRowChanged" msprop:Generator_TablePropName="ChartOfAccount" msprop:Generator_RowDeletingName="ChartOfAccountRowDeleting" msprop:Generator_RowChangingName="ChartOfAccountRowChanging" msprop:Generator_RowEvHandlerName="ChartOfAccountRowChangeEventHandler" msprop:Generator_RowDeletedName="ChartOfAccountRowDeleted" msprop:Generator_RowClassName="ChartOfAccountRow" msprop:Generator_UserTableName="ChartOfAccount" msprop:Generator_RowEvArgName="ChartOfAccountRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MainAccount_Name" msprop:Generator_ColumnVarNameInTable="columnMainAccount_Name" msprop:Generator_ColumnPropNameInRow="MainAccount_Name" msprop:Generator_ColumnPropNameInTable="MainAccount_NameColumn" msprop:Generator_UserColumnName="MainAccount_Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Level4Account_Name" msprop:Generator_ColumnVarNameInTable="columnLevel4Account_Name" msprop:Generator_ColumnPropNameInRow="Level4Account_Name" msprop:Generator_ColumnPropNameInTable="Level4Account_NameColumn" msprop:Generator_UserColumnName="Level4Account_Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Level4Account_Address" msprop:Generator_ColumnVarNameInTable="columnLevel4Account_Address" msprop:Generator_ColumnPropNameInRow="Level4Account_Address" msprop:Generator_ColumnPropNameInTable="Level4Account_AddressColumn" msprop:Generator_UserColumnName="Level4Account_Address" type="xs:string" minOccurs="0" />
+              <xs:element name="Level4Account_NTNNo" msprop:Generator_ColumnVarNameInTable="columnLevel4Account_NTNNo" msprop:Generator_ColumnPropNameInRow="Level4Account_NTNNo" msprop:Generator_ColumnPropNameInTable="Level4Account_NTNNoColumn" msprop:Generator_UserColumnName="Level4Account_NTNNo" type="xs:string" minOccurs="0" />
+              <xs:element name="Level4Account_CNICNo" msprop:Generator_ColumnVarNameInTable="columnLevel4Account_CNICNo" msprop:Generator_ColumnPropNameInRow="Level4Account_CNICNo" msprop:Generator_ColumnPropNameInTable="Level4Account_CNICNoColumn" msprop:Generator_UserColumnName="Level4Account_CNICNo" type="xs:string" minOccurs="0" />
+              <xs:element name="Level4Account_CellNo" msprop:Generator_ColumnVarNameInTable="columnLevel4Account_CellNo" msprop:Generator_ColumnPropNameInRow="Level4Account_CellNo" msprop:Generator_ColumnPropNameInTable="Level4Account_CellNoColumn" msprop:Generator_UserColumnName="Level4Account_CellNo" type="xs:string" minOccurs="0" />
+              <xs:element name="Level4Account_Email" msprop:Generator_ColumnVarNameInTable="columnLevel4Account_Email" msprop:Generator_ColumnPropNameInRow="Level4Account_Email" msprop:Generator_ColumnPropNameInTable="Level4Account_EmailColumn" msprop:Generator_UserColumnName="Level4Account_Email" type="xs:string" minOccurs="0" />
+              <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:string" minOccurs="0" />
+              <xs:element name="Level2Account_Name" msprop:Generator_ColumnVarNameInTable="columnLevel2Account_Name" msprop:Generator_ColumnPropNameInRow="Level2Account_Name" msprop:Generator_ColumnPropNameInTable="Level2Account_NameColumn" msprop:Generator_UserColumnName="Level2Account_Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Level3Account_Name" msprop:Generator_ColumnVarNameInTable="columnLevel3Account_Name" msprop:Generator_ColumnPropNameInRow="Level3Account_Name" msprop:Generator_ColumnPropNameInTable="Level3Account_NameColumn" msprop:Generator_UserColumnName="Level3Account_Name" type="xs:string" minOccurs="0" />
+              <xs:element name="MainAccount_Id" msprop:Generator_ColumnVarNameInTable="columnMainAccount_Id" msprop:Generator_ColumnPropNameInRow="MainAccount_Id" msprop:Generator_ColumnPropNameInTable="MainAccount_IdColumn" msprop:Generator_UserColumnName="MainAccount_Id" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="GroupAttendancesDataSet" targetNamespace="http://tempuri.org/GroupAttendancesDataSet.xsd" xmlns:mstns="http://tempuri.org/GroupAttendancesDataSet.xsd" xmlns="http://tempuri.org/GroupAttendancesDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="GroupAttendancesDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="GroupAttendancesDataSet" msprop:Generator_UserDSName="GroupAttendancesDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="GroupAttendances" msprop:Generator_TableClassName="GroupAttendancesDataTable" msprop:Generator_TableVarName="tableGroupAttendances" msprop:Generator_TablePropName="GroupAttendances" msprop:Generator_RowDeletingName="GroupAttendancesRowDeleting" msprop:Generator_RowChangingName="GroupAttendancesRowChanging" msprop:Generator_RowEvHandlerName="GroupAttendancesRowChangeEventHandler" msprop:Generator_RowDeletedName="GroupAttendancesRowDeleted" msprop:Generator_UserTableName="GroupAttendances" msprop:Generator_RowChangedName="GroupAttendancesRowChanged" msprop:Generator_RowEvArgName="GroupAttendancesRowChangeEvent" msprop:Generator_RowClassName="GroupAttendancesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Subject" msprop:Generator_ColumnVarNameInTable="columnSubject" msprop:Generator_ColumnPropNameInRow="Subject" msprop:Generator_ColumnPropNameInTable="SubjectColumn" msprop:Generator_UserColumnName="Subject" type="xs:string" minOccurs="0" />
+              <xs:element name="Percentage" msprop:Generator_ColumnVarNameInTable="columnPercentage" msprop:Generator_ColumnPropNameInRow="Percentage" msprop:Generator_ColumnPropNameInTable="PercentageColumn" msprop:Generator_UserColumnName="Percentage" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SubjectResultsDataSet" targetNamespace="http://tempuri.org/SubjectResultsDataSet.xsd" xmlns:mstns="http://tempuri.org/SubjectResultsDataSet.xsd" xmlns="http://tempuri.org/SubjectResultsDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SubjectResultsDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="SubjectResultsDataSet" msprop:Generator_UserDSName="SubjectResultsDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SubjectResults" msprop:Generator_TableClassName="SubjectResultsDataTable" msprop:Generator_TableVarName="tableSubjectResults" msprop:Generator_TablePropName="SubjectResults" msprop:Generator_RowDeletingName="SubjectResultsRowDeleting" msprop:Generator_RowChangingName="SubjectResultsRowChanging" msprop:Generator_RowEvHandlerName="SubjectResultsRowChangeEventHandler" msprop:Generator_RowDeletedName="SubjectResultsRowDeleted" msprop:Generator_UserTableName="SubjectResults" msprop:Generator_RowChangedName="SubjectResultsRowChanged" msprop:Generator_RowEvArgName="SubjectResultsRowChangeEvent" msprop:Generator_RowClassName="SubjectResultsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TermName" msdata:Caption="GPA" msprop:Generator_ColumnVarNameInTable="columnTermName" msprop:Generator_ColumnPropNameInRow="TermName" msprop:Generator_ColumnPropNameInTable="TermNameColumn" msprop:Generator_UserColumnName="TermName" type="xs:string" minOccurs="0" />
+              <xs:element name="TestName" msdata:Caption="GPA" msprop:Generator_ColumnVarNameInTable="columnTestName" msprop:Generator_ColumnPropNameInRow="TestName" msprop:Generator_ColumnPropNameInTable="TestNameColumn" msprop:Generator_UserColumnName="TestName" type="xs:string" minOccurs="0" />
+              <xs:element name="Subject" msdata:Caption="GPA" msprop:Generator_ColumnVarNameInTable="columnSubject" msprop:Generator_ColumnPropNameInRow="Subject" msprop:Generator_ColumnPropNameInTable="SubjectColumn" msprop:Generator_UserColumnName="Subject" type="xs:string" minOccurs="0" />
+              <xs:element name="Grade" msdata:Caption="GPA" msprop:Generator_ColumnVarNameInTable="columnGrade" msprop:Generator_ColumnPropNameInRow="Grade" msprop:Generator_ColumnPropNameInTable="GradeColumn" msprop:Generator_UserColumnName="Grade" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalMarks" msdata:Caption="GPA" msprop:Generator_ColumnVarNameInTable="columnTotalMarks" msprop:Generator_ColumnPropNameInRow="TotalMarks" msprop:Generator_ColumnPropNameInTable="TotalMarksColumn" msprop:Generator_UserColumnName="TotalMarks" type="xs:double" minOccurs="0" />
+              <xs:element name="ObtainMarksStr" msdata:Caption="GPA" msprop:Generator_ColumnVarNameInTable="columnObtainMarksStr" msprop:Generator_ColumnPropNameInRow="ObtainMarksStr" msprop:Generator_ColumnPropNameInTable="ObtainMarksStrColumn" msprop:Generator_UserColumnName="ObtainMarksStr" type="xs:string" minOccurs="0" />
+              <xs:element name="ObtainMarks" msdata:Caption="GPA" msprop:Generator_ColumnVarNameInTable="columnObtainMarks" msprop:Generator_ColumnPropNameInRow="ObtainMarks" msprop:Generator_ColumnPropNameInTable="ObtainMarksColumn" msprop:Generator_UserColumnName="ObtainMarks" type="xs:double" minOccurs="0" />
+              <xs:element name="Percentage" msdata:Caption="GPA" msprop:Generator_ColumnVarNameInTable="columnPercentage" msprop:Generator_ColumnPropNameInRow="Percentage" msprop:Generator_ColumnPropNameInTable="PercentageColumn" msprop:Generator_UserColumnName="Percentage" type="xs:string" minOccurs="0" />
+              <xs:element name="GPA" msprop:Generator_ColumnVarNameInTable="columnGPA" msprop:Generator_ColumnPropNameInRow="GPA" msprop:Generator_ColumnPropNameInTable="GPAColumn" msprop:Generator_UserColumnName="GPA" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
